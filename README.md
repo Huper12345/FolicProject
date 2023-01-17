@@ -1,3 +1,1 @@
-## FolicProject
-
-This web cite for LP folic acid
+Тут вам нужно создать инструкцию по работе с проектом

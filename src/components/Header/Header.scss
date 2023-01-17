@@ -1,0 +1,14 @@
+
+.Header__inner {
+  background-color: var(--black);
+  min-height: 162px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-direction: column;
+  position: relative;
+}
+
+.Header {
+  grid-area: header;
+}
