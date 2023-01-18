@@ -4,9 +4,13 @@
   padding: 15px 0 15px 0;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  min-width: 800px;
 }
 
-.Header {
+  .Header {
   background-color: var(--lightpink);
+  position: relative;
+  z-index: 1000;
 }
 

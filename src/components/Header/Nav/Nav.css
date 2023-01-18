@@ -10,6 +10,7 @@
     margin: 0 25px 0 0;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.1s;
 }
 
 .Nav-Link:hover {

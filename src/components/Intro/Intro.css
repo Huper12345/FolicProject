@@ -1,0 +1,15 @@
+.Intro {
+    min-height: 400px;
+    background-color: var(--lightpink);
+}
+
+.Intro-Inner {
+    position: relative;
+    min-height: 720px;
+}
+
+.Intro-Background {
+    max-height: 720px;
+    position: absolute;
+    right: 0;
+}
