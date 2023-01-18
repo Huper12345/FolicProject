@@ -1,0 +1,24 @@
+
+.Nav-Link {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'SF-Pro-Display-Regular';
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0 25px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Nav-Link:hover {
+    color: brown;
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    font-weight: 500;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/SF-Pro-Display-Regular.woff);
+  }

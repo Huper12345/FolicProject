@@ -1,9 +1,10 @@
 import "./Logo.css";
+import LogoT from "../../../helpers/assets/Images/logo.png"
 
 export const Logo = () => {
   return (
     <div className="Logo">
-      <h3>F</h3>
+      <img src={LogoT} alt="Logo" className="Logo-Img"></img>
     </div>
   );
 };

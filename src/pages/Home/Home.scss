@@ -1,8 +1,15 @@
 .Home {
-  display: grid;
   background-color: var(--black);
   position: relative;
   overflow: hidden;
-  min-height: 450px;
  
+}
+
+  .container {
+    width: 100%;
+
+    max-width: 1230px;
+    margin: 0 auto;
+
+    padding: 0 15px;
 }

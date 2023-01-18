@@ -3,7 +3,9 @@ import "./Nav.css";
 export const Nav = () => {
   return (
     <nav className="Nav">
-      <h3>Navigation</h3>
+      <a href="#" className="Nav-Link">О препарате</a>
+      <a href="#" className="Nav-Link">Задать вопрос</a>
+      <a href="#" className="Nav-Link">Контакты</a>
     </nav>
   );
 };
