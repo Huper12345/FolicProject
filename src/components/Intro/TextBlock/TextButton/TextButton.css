@@ -1,0 +1,33 @@
+
+.TextButton-Box {
+    max-width: 200px;
+    height: 55px;
+    background-color: var(--darkpink);
+    border-radius: 25px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.TextButton {
+    font-size: 23px;
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 0 13px 0 13px;
+}
+
+.TextButton-Box:hover {
+    background-color: brown;
+}
+
+
+@font-face {
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  }
