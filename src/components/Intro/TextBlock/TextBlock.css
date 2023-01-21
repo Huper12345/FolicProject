@@ -1,15 +1,16 @@
 
 .TextBlock {
-    position: relative;
-    padding-left: 11%;
+    margin-left: 11%;
     transform: translateX(-11%);
 }
 
 .Text-Intro-Box {
-    top: 3%;
-    position: absolute;
-    z-index: 800;
-    width: 450px;
+    width: 570px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 10px 40px 45px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 80px;
    
 }
 

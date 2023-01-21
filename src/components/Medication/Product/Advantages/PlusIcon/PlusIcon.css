@@ -1,0 +1,17 @@
+.Plus-Icon {
+  width: 55px;
+  height: 55px;
+  fill: var(--darkpink);
+  cursor: pointer;
+  transition: 0.1s;
+  margin-right: 2px;
+}
+
+.Advantages-Button:hover .Plus-Icon {
+  fill: var(--marineblue);
+}
+
+.Plus-Icon.active {
+  fill: var(--marineblue);
+  transform: rotate(45deg);
+}

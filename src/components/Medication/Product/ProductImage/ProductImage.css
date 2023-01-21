@@ -1,0 +1,13 @@
+.ProducImage-Img {
+    display: block;
+    max-width: 800px;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin-left: 40px;
+}
+
+.ProducImage {
+    width: 50%;
+    position: relative;
+}

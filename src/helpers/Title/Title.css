@@ -1,0 +1,22 @@
+.Title-Container {
+    margin: 10px 0;
+}
+
+.Title-Text {
+    font-family: 'Play-Fair-Display-Bold';
+    font-weight: 700;
+    font-style: normal;
+    color: var(--middlegray);
+    text-transform: uppercase;
+}
+
+.Title-Subtext {
+    color: var(--darkpink);
+}
+
+@font-face {
+    font-family: 'Play-Fair-Display-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+  }

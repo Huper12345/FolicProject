@@ -1,0 +1,11 @@
+.Product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.Advantages-Box {
+    width: 50%;
+    position: relative;
+    z-index: 1000;
+}

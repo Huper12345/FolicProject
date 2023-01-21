@@ -1,5 +1,5 @@
-import "./Intro.css";
-import Girl from '../../helpers/assets/Images/dev.png'
+import "./Intro.scss";
+import Girl from '../../helpers/assets/Images/dev2.webp'
 import { TextBlock } from "./TextBlock";
 
 export const Intro = () => {

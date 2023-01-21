@@ -1,0 +1,26 @@
+
+.Subscription-Container {
+    position: relative;
+    z-index: 200;
+    width: 70%;
+    background-color: var(--lightpink2);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 70px auto 20px auto;
+}
+
+.Subscription-Text {
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--white);
+    text-align: justify;
+}
+
+@font-face {
+    font-family: 'Play-Fair-Display-Bold';
+    font-weight: 400;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  }

@@ -1,0 +1,23 @@
+.Intro {
+    min-height: 400px;
+    background: linear-gradient(var(--lightpink), var(--middlepink));
+    height: 100vh;
+    max-height: 920px;
+}
+
+.Intro-Inner {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    padding-top: 200px;
+}
+
+.Intro-Background {
+    max-height: 920px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
