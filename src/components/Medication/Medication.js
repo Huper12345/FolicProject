@@ -8,9 +8,9 @@ export const Medication = () => {
     <section className="section">
       <div className="container">
         <div className="Medication">
-          < Title text="Препарат рекомендованный" subtext="воз" />
+          < Title text="Препарат рекомендованный" subtext="воз" href="https://www.who.int/ru" />
           < Product />
-          < Subscription text="ОАО «БЗМП» является единственным белорусским производителем фолиевой кислоты в дозировке 0,4 мг в качестве лекарственного препарата." />
+          < Subscription subtext="Borimed" href="https://borimed.com/" text=" является единственным белорусским производителем фолиевой кислоты в дозировке 0,4 мг в качестве лекарственного препарата." />
         </div>
       </div>
     </section>

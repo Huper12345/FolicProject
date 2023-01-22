@@ -1,15 +1,12 @@
 
-.TextButton-Box {
+.TextButton {
     max-width: 200px;
     height: 55px;
     background-color: var(--darkpink);
     border-radius: 25px;
-    padding-top: 10px;
     cursor: pointer;
     transition: 0.1s;
-}
-
-.TextButton {
+    
     font-size: 23px;
     font-family: 'Play-Fair-Display-Regular';
     font-weight: 400;
@@ -17,10 +14,10 @@
     text-decoration: none;
     color: var(--white);
     text-transform: uppercase;
-    padding: 0 13px 0 13px;
+    padding: 13px 15px 13px 15px;
 }
 
-.TextButton-Box:hover {
+.TextButton:hover {
     background-color: brown;
 }
 

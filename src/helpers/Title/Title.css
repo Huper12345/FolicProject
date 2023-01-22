@@ -12,6 +12,13 @@
 
 .Title-Subtext {
     color: var(--darkpink);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.Title-Subtext:hover {
+    color: var(--brown);
 }
 
 @font-face {

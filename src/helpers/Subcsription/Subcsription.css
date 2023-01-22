@@ -18,6 +18,22 @@
     text-align: justify;
 }
 
+.Subscription-Subtext {
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.Subscription-Subtext:hover {
+    color: var(--brown);
+}
+
+
+
 @font-face {
     font-family: 'Play-Fair-Display-Bold';
     font-weight: 400;

@@ -11,7 +11,7 @@ export const TextBlock = () => {
           </h1>
           <div className="Button-Box">
               <TextButton href="#" text="Подробнее" />
-              <TextButton href="#" text="Где купить?" />
+              <TextButton href="https://tabletka.by/result?ls=21024" target="blank" text="Где купить?" />
           </div>
     </div>
     </div>
