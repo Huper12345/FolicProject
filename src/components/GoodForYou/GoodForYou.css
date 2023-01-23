@@ -1,3 +1,22 @@
 .section--goodforyou {
     padding: 5px 0;
+    background-color: var(--lightpink);
+}
+
+.GoodForYou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title-Text.Good {
+    color: var(--darkpink);
+    margin: 30px 0;
+}
+
+.hrGood {
+    border-bottom: 3px solid var(--white);
+    width: 120px;
+    border-radius: 2px;
 }

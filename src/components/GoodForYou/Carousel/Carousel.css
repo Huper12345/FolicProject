@@ -1,0 +1,42 @@
+.Main-container {
+    height: 500px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+
+    margin: 40px 0;
+    position: relative;
+}
+
+.Window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.All-pages-container {
+    height: 100%;
+    display: flex;
+    
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.Arrow {
+    cursor: pointer;
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.Arrow.Left {
+    left: 10px;
+}
+
+.Arrow.Right {
+    right: 10px;
+}

@@ -1,0 +1,60 @@
+.SlideItem-Box {
+
+    user-select: none;
+    min-width: 895px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.SlideItem-Title {
+    font-family: 'Play-Fair-Display-Bold';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0 30px 0;
+    color: var(--darkpink);
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.SlideItem-Subtext {
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    max-width: 800px;
+    text-align: justify;
+    color: var(--lightblack);
+    border: 2px solid var(--white);
+    padding: 8px 13px 8px 13px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.SlideItem-IMG {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: 'Play-Fair-Display-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+  }
+
+  @font-face {
+    font-family: 'Play-Fair-Display-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  }
