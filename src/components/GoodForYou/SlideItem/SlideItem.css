@@ -47,6 +47,7 @@
 .SlideItem-IMG {
   max-width: 300px;
   margin-bottom: 15px;
+  max-height: 260px;
 }
 
 @font-face {
@@ -104,6 +105,7 @@
 
   .SlideItem-IMG {
     max-width: 230px;
+    max-height: 200px;
   }
 }
 
