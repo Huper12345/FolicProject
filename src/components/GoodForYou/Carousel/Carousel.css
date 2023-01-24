@@ -1,42 +1,100 @@
 .Main-container {
-    height: 500px;
-    width: 900px;
-    display: flex;
-    align-items: center;
+  height: 500px;
+  width: 900px;
+  display: flex;
+  align-items: center;
 
-    margin: 40px 0;
-    position: relative;
+  margin: 5px 0;
+  position: relative;
+}
+
+.Sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .Window {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .All-pages-container {
-    height: 100%;
-    display: flex;
-    
-    transition: translate;
-    transition-property: transform;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+  height: 100%;
+  display: flex;
+
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .Arrow {
-    cursor: pointer;
-    color: var(--white);
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    z-index: 1000;
+  cursor: pointer;
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+  transition: 0.1s;
+  position: absolute;
+  z-index: 1000;
+}
+
+.Arrow:hover {
+  color: var(--marineblue);
 }
 
 .Arrow.Left {
-    left: 10px;
+  left: 0;
 }
 
 .Arrow.Right {
-    right: 10px;
+  right: 0;
+}
+
+@media (max-width: 930px) {
+  .Arrow.Left {
+    left: 10%;
+  }
+
+  .Arrow.Right {
+    right: 10%;
+  }
+}
+
+@media (max-width: 722px) {
+  .Arrow.Left {
+    left: 20%;
+  }
+
+  .Arrow.Right {
+    right: 20%;
+  }
+}
+
+@media (max-width: 561px) {
+  .Sub-container {
+    margin-bottom: 50px;
+  }
+
+  .Arrow.Left {
+    left: 30%;
+    bottom: -7%;
+  }
+
+  .Arrow.Right {
+    right: 30%;
+    bottom: -7%;
+  }
+}
+
+@media (max-width: 376px) {
+  .Arrow.Left {
+    left: 36%;
+  }
+
+  .Arrow.Right {
+    right: 36%;
+  }
 }

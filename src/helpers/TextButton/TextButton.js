@@ -1,3 +1,4 @@
+import React from "react"
 import "./TextButton.css";
 
 export const TextButton = ({text, href, target}) => {

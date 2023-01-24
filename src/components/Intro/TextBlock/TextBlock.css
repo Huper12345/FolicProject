@@ -1,54 +1,56 @@
-
 .TextBlock {
-    margin-left: 11%;
-    transform: translateX(-11%);
+  margin-left: 11%;
+  transform: translateX(-11%);
 }
 
 .Text-Intro-Box {
-    width: 570px;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 15px 10px 40px 45px;
-    border-radius: 50px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 80px;
-   
+  width: 570px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 10px 40px 45px;
+  border-radius: 50px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 80px;
+  transition: 0.3s;
+}
+
+.Text-Intro-Box:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .Text-Intro {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 42px;
-    text-align: left;
-    line-height: 1.1;
-    color: var(--darkpink);
-    padding-bottom: 10px;
-    
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  text-align: left;
+  line-height: 1.1;
+  color: var(--darkpink);
+  padding-bottom: 10px;
 }
 
 .Text-Intro-Dosage {
-    font-size: 55px;
-    line-height: 0.5;
+  font-size: 55px;
+  line-height: 0.5;
 }
 
 .TextBlock-BG {
-    position: absolute;
-    max-width: 630px;
-    left: 25%;
-    z-index: 400;
-    top: 0;
+  position: absolute;
+  max-width: 630px;
+  left: 25%;
+  z-index: 400;
+  top: 0;
 }
 
 .Button-Box {
-    margin-top: 18px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 370px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 370px;
 }
 
 @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-  }
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}

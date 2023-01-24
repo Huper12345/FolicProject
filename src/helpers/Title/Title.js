@@ -1,3 +1,4 @@
+import React from "react"
 import "./Title.css";
 
 export const Title = ({text, subtext, href, className = "Title-Text"}) => {

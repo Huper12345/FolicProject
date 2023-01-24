@@ -1,3 +1,4 @@
+import React from "react"
 import "./Product.css";
 import { ProductImage } from "./ProductImage";
 import { Advantages } from "./Advantages";

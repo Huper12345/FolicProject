@@ -1,1 +1,1 @@
-export * from "./GoodFotYou";
+export * from './GoodForYou';

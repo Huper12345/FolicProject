@@ -1,60 +1,129 @@
 .SlideItem-Box {
-
-    user-select: none;
-    min-width: 895px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  user-select: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-
+.Slide-Title-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
 .SlideItem-Title {
-    font-family: 'Play-Fair-Display-Bold';
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 20px 0 30px 0;
-    color: var(--darkpink);
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+}
 
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    padding: 10px 30px;
+.SlideItem-Icon {
+  width: 45px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .SlideItem-Subtext {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    max-width: 800px;
-    text-align: justify;
-    color: var(--lightblack);
-    border: 2px solid var(--white);
-    padding: 8px 13px 8px 13px;
-    border-radius: 10px;
-    background-color: var(--white);
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  max-width: 800px;
+  text-align: justify;
+  color: var(--lightblack);
+  border: 2px solid var(--white);
+  padding: 8px 13px 8px 13px;
+  border-radius: 10px;
+  background-color: var(--white);
 }
 
 .SlideItem-IMG {
-    max-width: 300px;
-    margin-bottom: 15px;
+  max-width: 300px;
+  margin-bottom: 15px;
+  max-height: 260px;
 }
 
 @font-face {
-    font-family: 'Play-Fair-Display-Bold';
-    font-weight: 700;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
+
+@media (max-width: 812px) {
+  .SlideItem-Subtext {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 624px) {
+  .SlideItem-Subtext {
+    max-width: 500px;
+    font-size: 17px;
   }
 
-  @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  .SlideItem-Title {
+    font-size: 17px;
   }
+
+  .SlideItem-Icon {
+    width: 35px;
+  }
+}
+
+@media (max-width: 518px) {
+  .SlideItem-Subtext {
+    max-width: 400px;
+    font-size: 16px;
+  }
+
+  .SlideItem-Title {
+    font-size: 16px;
+  }
+
+  .SlideItem-Icon {
+    width: 33px;
+  }
+
+  .Slide-Title-Box {
+    max-width: 285px;
+  }
+
+  .SlideItem-IMG {
+    max-width: 230px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 412px) {
+  .SlideItem-Subtext {
+    max-width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 310px) {
+  .SlideItem-Subtext {
+    max-width: 270px;
+    font-size: 15px;
+  }
+
+  .Slide-Title-Box {
+    max-width: 265px;
+    font-size: 14px;
+  }
+}

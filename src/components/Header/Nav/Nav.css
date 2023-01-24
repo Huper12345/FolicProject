@@ -1,28 +1,27 @@
-
 .Nav {
-    margin-right: 100px;
+  margin-right: 50px;
 }
 
 .Nav-Link {
-    font-size: 18px;
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    color: var(--white);
-    margin: 0 25px 0 0;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.1s;
+  font-size: 21px;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0 25px 0 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s;
 }
 
 .Nav-Link:hover {
-    color: brown;
+  color: brown;
 }
 
 @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-  }
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}

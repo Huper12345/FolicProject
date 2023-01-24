@@ -1,3 +1,4 @@
+import React from "react"
 import "./Header.scss";
 import "../../pages/Home/Home.scss"
 import { Logo } from "./Logo";
