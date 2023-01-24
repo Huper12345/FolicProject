@@ -1,75 +1,67 @@
-import React from "react"
-import { cloneElement } from "react";
-import { useEffect, useState, Children } from "react";
-import { FaChevronLeft, FaChevronRight} from 'react-icons/fa'
-import "./Carousel.css";
-
+import React from 'react';
+import { cloneElement } from 'react';
+import { useEffect, useState, Children } from 'react';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import './Carousel.css';
 
 const PAGE_WIDTH = 900;
 
-export const Carousel = ({children}) => {
-  
-    const [pages, setPages] = useState([]);
-    const [offset, setOffset] = useState(0);
+export const Carousel = ({ children }) => {
+  const [pages, setPages] = useState([]);
+  const [offset, setOffset] = useState(0);
 
-    const handleLeftArrowClick = () => {
-        console.log("leftArrwoClick");
+  const handleLeftArrowClick = () => {
+    console.log('leftArrwoClick');
 
-        setOffset((currentOffset) => {
+    setOffset((currentOffset) => {
+      const newOffset = currentOffset + PAGE_WIDTH;
 
-            const newOffset = currentOffset + PAGE_WIDTH
+      console.log(newOffset);
+      return Math.min(newOffset, 0);
+    });
+  };
 
-            console.log(newOffset);
-            return Math.min(newOffset, 0);
+  const handleRightArrowClick = () => {
+    console.log('RightArrwoClick');
 
-        })
-    }
+    setOffset((currentOffset) => {
+      const newOffset = currentOffset - PAGE_WIDTH;
 
-    const handleRightArrowClick = () => {
-        console.log("RightArrwoClick");
+      const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
 
-        setOffset((currentOffset) => {
+      console.log(newOffset, maxOffset);
+      return Math.max(newOffset, maxOffset);
+    });
+  };
 
-            const newOffset = currentOffset - PAGE_WIDTH
+  useEffect(() => {
+    setPages(
+      Children.map(children, (child) => {
+        return cloneElement(child, {
+          style: {
+            height: '100%',
+            maxWidth: `${PAGE_WIDTH}px`,
+            minWidth: `${PAGE_WIDTH}px`,
+          },
+        });
+      })
+    );
+  }, []);
 
-            const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
-
-            console.log(newOffset, maxOffset);
-            return Math.max(newOffset, maxOffset);
-
-        })
-    }
-  
-    useEffect (() => {
-        setPages(
-
-            Children.map(children, child => {
-                return cloneElement(child, {
-                    style: {
-                        height: "100%",
-                        maxWidth: `${PAGE_WIDTH}px`,
-                        minWidth: `${PAGE_WIDTH}px`,
-                    }
-                })
-            })
-        )
-    }, [])
-  
-    return (
+  return (
     <div className="Main-container">
-
-        <FaChevronLeft className="Arrow Left" onClick={handleLeftArrowClick} />
-        <div className="Window">
-            <div 
-            className="All-pages-container"
-            style={{
-                transform: `translateX(${offset}px)`
-            }}
-            >{pages}
-            </div>
+      <FaChevronLeft className="Arrow Left" onClick={handleLeftArrowClick} />
+      <div className="Window">
+        <div
+          className="All-pages-container"
+          style={{
+            transform: `translateX(${offset}px)`,
+          }}
+        >
+          {pages}
         </div>
-        <FaChevronRight className="Arrow Right" onClick={handleRightArrowClick} />
-
+      </div>
+      <FaChevronRight className="Arrow Right" onClick={handleRightArrowClick} />
     </div>
   );
 };

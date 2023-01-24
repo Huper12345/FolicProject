@@ -1,6 +1,6 @@
 .SlideItem-Box {
   user-select: none;
-  min-width: 895px;
+  min-width: 100%;
   max-width: 900px;
   display: flex;
   flex-direction: column;

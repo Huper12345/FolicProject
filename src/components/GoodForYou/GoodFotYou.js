@@ -1,6 +1,5 @@
 import React from 'react';
 import './GoodForYou.css';
-import { Title } from '../../helpers/Title';
 import { Carousel } from './Carousel';
 import { SlideItem } from './SlideItem';
 import Slide1 from '../../helpers/assets/Images/GoodForYou-Pack/1.png';
