@@ -1,6 +1,6 @@
 .Main-container {
   height: 500px;
-  width: 900px;
+  width: auto;
   display: flex;
   align-items: center;
 
@@ -29,7 +29,6 @@
   color: var(--white);
   width: 30px;
   height: 30px;
-  position: absolute;
   z-index: 1000;
   transition: 0.1s;
 }
@@ -39,9 +38,9 @@
 }
 
 .Arrow.Left {
-  left: 10px;
+  margin-left: 10px;
 }
 
 .Arrow.Right {
-  right: 10px;
+  margin-right: 10px;
 }

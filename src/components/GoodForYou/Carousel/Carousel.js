@@ -4,7 +4,7 @@ import { useEffect, useState, Children } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './Carousel.css';
 
-const PAGE_WIDTH = 900;
+const PAGE_WIDTH = 100;
 
 export const Carousel = ({ children }) => {
   const [pages, setPages] = useState([]);
@@ -40,8 +40,8 @@ export const Carousel = ({ children }) => {
         return cloneElement(child, {
           style: {
             height: '100%',
-            maxWidth: `${PAGE_WIDTH}px`,
-            minWidth: `${PAGE_WIDTH}px`,
+            maxWidth: `${PAGE_WIDTH}%`,
+            minWidth: `${PAGE_WIDTH}%`,
           },
         });
       })
@@ -55,7 +55,7 @@ export const Carousel = ({ children }) => {
         <div
           className="All-pages-container"
           style={{
-            transform: `translateX(${offset}px)`,
+            transform: `translateX(${offset}%)`,
           }}
         >
           {pages}
