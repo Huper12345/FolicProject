@@ -5,9 +5,11 @@
     position: absolute;
     z-index: 0;
     margin-left: 40px;
+    user-select: none;
 }
 
 .ProducImage {
     width: 50%;
     position: relative;
+    user-select: none;
 }

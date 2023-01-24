@@ -16,6 +16,7 @@
     font-size: 20px;
     color: var(--white);
     text-align: justify;
+    user-select: none;
 }
 
 .Subscription-Subtext {
