@@ -1,3 +1,4 @@
+import React from "react"
 import "./Subcsription.css";
 
 export const Subscription = ({text, subtext, href}) => {

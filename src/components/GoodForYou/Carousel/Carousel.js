@@ -1,3 +1,4 @@
+import React from "react"
 import { cloneElement } from "react";
 import { useEffect, useState, Children } from "react";
 import { FaChevronLeft, FaChevronRight} from 'react-icons/fa'

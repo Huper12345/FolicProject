@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react";
 import "./Advantages.css";
 import { PlusIcon } from "./PlusIcon";

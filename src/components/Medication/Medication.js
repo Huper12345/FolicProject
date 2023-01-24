@@ -1,3 +1,4 @@
+import React from "react"
 import "./Medication.css";
 import { Title } from "../../helpers/Title";
 import { Product } from "./Product";
