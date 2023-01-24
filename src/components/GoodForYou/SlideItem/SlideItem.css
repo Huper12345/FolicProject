@@ -1,11 +1,11 @@
 .SlideItem-Box {
   user-select: none;
-  width: auto;
   display: flex;
-  min-width: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .Slide-Title-Box {
@@ -61,4 +61,67 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
+
+@media (max-width: 812px) {
+  .SlideItem-Subtext {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 624px) {
+  .SlideItem-Subtext {
+    max-width: 500px;
+    font-size: 17px;
+  }
+
+  .SlideItem-Title {
+    font-size: 17px;
+  }
+
+  .SlideItem-Icon {
+    width: 35px;
+  }
+}
+
+@media (max-width: 518px) {
+  .SlideItem-Subtext {
+    max-width: 400px;
+    font-size: 16px;
+  }
+
+  .SlideItem-Title {
+    font-size: 16px;
+  }
+
+  .SlideItem-Icon {
+    width: 33px;
+  }
+
+  .Slide-Title-Box {
+    max-width: 285px;
+  }
+
+  .SlideItem-IMG {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 412px) {
+  .SlideItem-Subtext {
+    max-width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 310px) {
+  .SlideItem-Subtext {
+    max-width: 270px;
+    font-size: 15px;
+  }
+
+  .Slide-Title-Box {
+    max-width: 265px;
+    font-size: 14px;
+  }
 }

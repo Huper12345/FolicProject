@@ -49,16 +49,18 @@ export const Carousel = ({ children }) => {
   }, []);
 
   return (
-    <div className="Main-container">
+    <div className="Sub-container">
       <FaChevronLeft className="Arrow Left" onClick={handleLeftArrowClick} />
-      <div className="Window">
-        <div
-          className="All-pages-container"
-          style={{
-            transform: `translateX(${offset}%)`,
-          }}
-        >
-          {pages}
+      <div className="Main-container">
+        <div className="Window">
+          <div
+            className="All-pages-container"
+            style={{
+              transform: `translateX(${offset}%)`,
+            }}
+          >
+            {pages}
+          </div>
         </div>
       </div>
       <FaChevronRight className="Arrow Right" onClick={handleRightArrowClick} />
