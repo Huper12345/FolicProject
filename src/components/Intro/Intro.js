@@ -12,7 +12,7 @@ export const Intro = () => {
           <img
             className="Intro-Background"
             alt="Girl"
-            src="https://i.ibb.co/XXqtmxW/devushka5.png"
+            src="https://i.ibb.co/1MyHGxF/devushka6.png"
             alt="devushka3"
           ></img>
         </div>
