@@ -1,5 +1,10 @@
 .Title-Subtext.babycalculator {
-    color: var(--darkpink);
-    cursor: default;
+  color: var(--darkpink);
+  cursor: default;
 }
 
+.BabyCalculator-Inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
