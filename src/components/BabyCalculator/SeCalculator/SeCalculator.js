@@ -6,7 +6,7 @@ export const SeCalculator = () => {
   const [baby, setBaby] = useState('Результат');
   const [age, setAge] = useState(0);
   const [seAge, setSeAge] = useState(0);
-
+ 
   const ageSelect = (e) => {
     setAge(e.target.value);
   };
@@ -53,6 +53,7 @@ export const SeCalculator = () => {
 
       return seAge;
     };
+
     //CalcAge
     const womanAge = (
       birthMonth,
@@ -96,9 +97,927 @@ export const SeCalculator = () => {
         dayToday
       ) + 2;
 
-    const getSeAge = calcSeMonth(seMonth);
+    const getSeMonth = calcSeMonth(seMonth);
 
-    setBaby(getWomanAge);
+    // calcBaby
+
+  const calcSeBaby = (getWomanAge, getSeMonth) => {
+
+      let babyResult = "";
+
+      if(getWomanAge === 18) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 4) {
+          babyResult = "Мальчик"
+        }
+      }
+
+      if(getWomanAge === 19) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 5 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth  >= 11) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 20) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 10 && getSeMonth < 12) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth  >= 11) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 21) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 2) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 22) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 2 && getSeMonth <= 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 6 && getSeMonth <= 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 23) {
+       
+        if(getSeMonth >= 1 && getSeMonth <= 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 2 && getSeMonth <= 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 9 && getSeMonth <= 11) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 24) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 3 && getSeMonth <=4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 6 && getSeMonth <= 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 8) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 25) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 2 && getSeMonth <= 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <=5) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 7 && getSeMonth <= 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 9) {
+          babyResult = "Мальчик"
+        }
+        
+      }
+
+      if(getWomanAge === 26) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 5) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9) {
+          babyResult = "Девочка"
+        }
+      }
+
+      if(getWomanAge === 27) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 5 && getSeMonth <= 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 7 && getSeMonth <= 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 11) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 12) {
+          babyResult = "Мальчик"
+        }
+      }
+
+      if(getWomanAge === 28) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 7 && getSeMonth <= 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 11 ) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 29) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 3 && getSeMonth <= 4) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 5 && getSeMonth <= 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 7 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 8 && getSeMonth <= 9) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 30) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 2 && getSeMonth <= 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 11) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 31 && getWomanAge === 32) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 11) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 33) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 5 && getSeMonth <= 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9 && getSeMonth <= 11) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 34) {
+       
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 35) {
+       
+        if(getSeMonth >= 1 && getSeMonth <= 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 5 && getSeMonth <= 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 9 && getSeMonth <= 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 11) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 36) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+       
+        if(getSeMonth >= 2 && getSeMonth <= 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 6 && getSeMonth <= 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth > 9 ) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 37) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+       
+       
+        if(getSeMonth >= 3 && getSeMonth <= 4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 11) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 38) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Девочка"
+        }
+       
+        if(getSeMonth >= 4 && getSeMonth <= 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 11) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 39) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+       
+        if(getSeMonth >= 3 && getSeMonth <= 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 6 && getSeMonth <= 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth > 11 ) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 40) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 4 ) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 5 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 6 && getSeMonth <= 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 10 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 11 ) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 41) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3 ) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 4 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 7 || getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 11 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 42) {
+
+        if(getSeMonth === 1) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 2 ) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8 || getSeMonth === 9) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 11) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 12 ) {
+          babyResult = "Девочка"
+        }
+
+      }
+
+      if(getWomanAge === 43) {
+
+        if(getSeMonth === 1 ) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 2 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 4) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 5) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 9 ) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 44) {
+
+        if(getSeMonth === 1 || getSeMonth === 2) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 3 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 6) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Мальчик"
+        }
+        if(getSeMonth >= 11) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge === 45) {
+
+        if(getSeMonth === 1 ) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 2 && getSeMonth <= 3) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth >= 4 && getSeMonth <= 6) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 7) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 8) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth === 9) {
+          babyResult = "Мальчик"
+        }
+
+        if(getSeMonth === 10) {
+          babyResult = "Девочка"
+        }
+
+        if(getSeMonth >= 11 && getSeMonth <= 12) {
+          babyResult = "Мальчик"
+        }
+
+      }
+
+      if(getWomanAge >= 46) {
+        babyResult = "Возраст больше 45"
+      }
+
+      if(getWomanAge <= 18) {
+        babyResult = "Вам меньше 18"
+      }
+      
+
+      return babyResult
+
+  }
+    setBaby(calcSeBaby(getWomanAge, getSeMonth));
   };
 
   return (
@@ -108,6 +1027,7 @@ export const SeCalculator = () => {
           <h4 className="Woman-Text">Возраст матери</h4>
 
           <input
+            required
             onChange={ageSelect}
             value={age}
             className="BabyInput WomanAge"
@@ -119,6 +1039,7 @@ export const SeCalculator = () => {
           <h4 className="Woman-Text SeDate">Дата зачатия</h4>
 
           <input
+            required
             onChange={seAgeSelect}
             value={seAge}
             className="BabyInput WomanAge"
@@ -127,7 +1048,7 @@ export const SeCalculator = () => {
         </div>
       </form>
 
-      <input value={baby} className="BabyInput Result" type="text"></input>
+      <textarea value={baby} className="BabyInput Result" type="text"></textarea>
       <button form="BabyForm" type="submit" className="BabyButton">
         Узнать
       </button>
