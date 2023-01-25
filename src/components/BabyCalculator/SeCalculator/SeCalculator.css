@@ -1,0 +1,125 @@
+.Calculator-Container {
+  max-width: 700px;
+  margin-top: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.BabyContainer.WomanAge {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  justify-content: center;
+}
+
+.BabyContainer.Result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BabyContainer.SeDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.Woman-Text {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  margin-right: 20px;
+  user-select: none;
+}
+
+.Woman-Text.SeDate {
+  margin-right: 45px;
+}
+
+.Woman-Text.Result {
+  margin-right: 70px;
+}
+
+.BabyInput {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--lightpink);
+  border: none;
+  color: var(--white);
+  font-size: 18px;
+  padding: 0 5px;
+  max-width: 200px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.BabyInput.WomanAge:hover {
+  background-color: var(--darkpink);
+}
+
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url(https://i.ibb.co/Fxp3nFF/calendar.png) no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.BabyInput:focus {
+  outline: none;
+  background-color: var(--darkpink);
+}
+
+.BabyInput.Result {
+  max-width: 145px;
+  user-select: none;
+  background-color: var(--white);
+  border: 2px solid var(--darkpink);
+  color: var(--darkpink);
+}
+
+.BabyInput.Result:focus {
+  outline: none;
+}
+
+.BabyInput.Result:hover {
+  cursor: inherit;
+}
+
+.BabyButton {
+  max-width: 130px;
+  height: 42px;
+  background-color: var(--darkpink);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  font-size: 18px;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 6px 15px 6px 15px;
+  border: 0;
+  margin-top: 15px;
+}
+
+.BabyButton:hover {
+  background-color: brown;
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
