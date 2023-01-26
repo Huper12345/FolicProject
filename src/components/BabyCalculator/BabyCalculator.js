@@ -2,6 +2,7 @@ import React from 'react';
 import './BabyCalculator.css';
 import { Title } from '../../helpers/Title';
 import { SeCalculator } from './SeCalculator';
+import { SeText } from './SeText';
 
 export const BabyCalculator = () => {
   return (
@@ -14,6 +15,7 @@ export const BabyCalculator = () => {
           subClassName="Title-Subtext babycalculator "
         />
         <div className="BabyCalculator-Inner">
+          <SeText />
           <SeCalculator />
         </div>
       </div>

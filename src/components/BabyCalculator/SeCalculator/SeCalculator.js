@@ -1029,6 +1029,12 @@ export const SeCalculator = () => {
 
   return (
     <div className="Calculator-Container">
+      <div className="Baby-Title-Container">
+        <h4 className="Baby-Title">Узнать пол ребенка </h4>
+        <img className="Gender-Img"
+          src="https://i.ibb.co/ck5Tcf9/gender.png"
+        ></img>
+      </div>
       <form onSubmit={handleSubmit} id="BabyForm" className="BabyForm">
         <div className="BabyContainer WomanAge">
           <h4 className="Woman-Text">Возраст матери</h4>
