@@ -6,7 +6,7 @@ import './Carousel.css';
 
 const PAGE_WIDTH = 100;
 
-export const Carousel = ({ children }) => {
+export const Carousel = ({ children, arrowL = "Arrow Left", arrowR = "Arrow Right"}) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
 
@@ -50,7 +50,7 @@ export const Carousel = ({ children }) => {
 
   return (
     <div className="Sub-container">
-      <FaChevronLeft className="Arrow Left" onClick={handleLeftArrowClick} />
+      <FaChevronLeft className={arrowL} onClick={handleLeftArrowClick} />
       <div className="Main-container">
         <div className="Window">
           <div
@@ -63,7 +63,7 @@ export const Carousel = ({ children }) => {
           </div>
         </div>
       </div>
-      <FaChevronRight className="Arrow Right" onClick={handleRightArrowClick} />
+      <FaChevronRight className={arrowR} onClick={handleRightArrowClick} />
     </div>
   );
 };

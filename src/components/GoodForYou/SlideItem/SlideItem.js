@@ -1,12 +1,12 @@
 import React from 'react';
 import './SlideItem.css';
 
-export const SlideItem = ({ title, src, subtext }) => {
+export const SlideItem = ({ title, src, subtext, icon }) => {
   return (
     <div className="SlideItem-Box">
       <div className="Slide-Title-Box">
         <img
-          src="https://i.ibb.co/cwzZsYT/checked2.png"
+          src={icon}
           alt=""
           className="SlideItem-Icon"
         ></img>
