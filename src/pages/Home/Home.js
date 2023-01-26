@@ -1,10 +1,11 @@
-import React from "react"
-import "./Home.scss";
-import { Header } from "../../components/Header";
-import {Intro} from "../../components/Intro"
-import { Medication } from "../../components/Medication";
-import { GoodForYou } from "../../components/GoodForYou";
-import {BabyCalculator} from "../../components/BabyCalculator"
+import React from 'react';
+import './Home.scss';
+import { Header } from '../../components/Header';
+import { Intro } from '../../components/Intro';
+import { Medication } from '../../components/Medication';
+import { GoodForYou } from '../../components/GoodForYou';
+import { BabyCalculator } from '../../components/BabyCalculator';
+import { GoodStuff } from '../../components/GoodStuff';
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <Medication />
       <GoodForYou />
       <BabyCalculator />
+      <GoodStuff />
     </div>
   );
 };

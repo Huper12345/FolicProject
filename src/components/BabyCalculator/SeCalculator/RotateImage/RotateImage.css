@@ -1,0 +1,13 @@
+.Gender-Img {
+  max-width: 100px;
+  position: absolute;
+  top: -20px;
+  right: -55px;
+  transform: rotate(-130deg);
+  transition: 2s;
+  user-select: none;
+}
+
+.Gender-Img.Rotate {
+  transform: rotate(408deg);
+}

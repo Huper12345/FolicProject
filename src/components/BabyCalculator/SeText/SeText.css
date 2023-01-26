@@ -1,0 +1,29 @@
+.SeText-Container {
+  display: flex;
+  max-width: 73%;
+  margin-right: 20px;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.SeImg {
+  display: block;
+  max-width: 370px;
+  height: auto;
+}
+
+.SeText-Content {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 53.5%;
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
