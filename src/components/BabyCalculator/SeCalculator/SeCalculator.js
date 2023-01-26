@@ -1053,7 +1053,6 @@ export const SeCalculator = () => {
 
         <div className="BabyContainer SeDate">
           <h4 className="Woman-Text SeDate">Дата зачатия</h4>
-
           <input
             required
             onChange={seAgeSelect}

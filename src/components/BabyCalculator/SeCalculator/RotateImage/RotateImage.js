@@ -1,6 +1,5 @@
 import React from 'react';
 import './RotateImage.css';
-import { useState } from 'react';
 
 export const RotateImage = ({ classRotate }) => {
   return (
