@@ -23,20 +23,6 @@
   user-select: none;
 }
 
-.Gender-Img {
-  max-width: 100px;
-  position: absolute;
-  top: -20px;
-  right: -55px;
-  transform: rotate(-130deg);
-  transition: 2s;
-}
-
-.Gender-Img:hover {
-  transform: rotate(48deg);
-  user-select: none;
-}
-
 .BabyContainer.WomanAge {
   display: flex;
   align-items: center;

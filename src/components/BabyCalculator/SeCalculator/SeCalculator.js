@@ -1,11 +1,17 @@
 import React from 'react';
 import './SeCalculator.css';
 import { useState } from 'react';
+import { RotateImage } from './RotateImage';
 
 export const SeCalculator = () => {
   const [baby, setBaby] = useState('Результат');
   const [age, setAge] = useState(0);
   const [seAge, setSeAge] = useState(0);
+  const [classRotate, setClassRotate] = useState(false);
+
+  const changeRotate = () => {
+    setClassRotate(!classRotate);
+  };
 
   const ageSelect = (e) => {
     setAge(e.target.value);
@@ -76,7 +82,6 @@ export const SeCalculator = () => {
       }
 
       if (birthMonth === monthToday) {
-        console.log(dayToday);
         if (birthDay > dayToday) {
           age = yearToday - birthYear - 1;
         }
@@ -109,7 +114,6 @@ export const SeCalculator = () => {
       }
 
       if (seMonth === monthToday) {
-        console.log(dayToday);
         if (seBirthDay > dayToday) {
           age = yearToday - seBirthYear - 1;
         }
@@ -143,12 +147,11 @@ export const SeCalculator = () => {
 
     const getWomanAge = (calcWomanAge, getSeAge) => {
       let womanAge = calcWomanAge - getSeAge;
+      womanAge = womanAge + 2;
       return womanAge;
     };
 
     const getSeMonth = calcSeMonth(seMonth);
-
-    console.log(getWomanAge(calcWomanAge, getSeAge));
 
     // calcBaby
 
@@ -1031,9 +1034,9 @@ export const SeCalculator = () => {
     <div className="Calculator-Container">
       <div className="Baby-Title-Container">
         <h4 className="Baby-Title">Узнать пол ребенка </h4>
-        <img className="Gender-Img"
-          src="https://i.ibb.co/ck5Tcf9/gender.png"
-        ></img>
+        <RotateImage
+          classRotate={classRotate ? 'Gender-Img Rotate' : 'Gender-Img'}
+        />
       </div>
       <form onSubmit={handleSubmit} id="BabyForm" className="BabyForm">
         <div className="BabyContainer WomanAge">
@@ -1066,7 +1069,12 @@ export const SeCalculator = () => {
         className="BabyInput Result"
         type="text"
       ></textarea>
-      <button form="BabyForm" type="submit" className="BabyButton">
+      <button
+        onClick={changeRotate}
+        form="BabyForm"
+        type="submit"
+        className="BabyButton"
+      >
         Узнать
       </button>
     </div>
