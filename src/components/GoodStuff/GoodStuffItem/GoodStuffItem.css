@@ -76,6 +76,10 @@
   opacity: 1;
 }
 
+.GoodStuff-Item:hover .GoodStuff-Click {
+  opacity: 1;
+}
+
 .GoodStuff-Box {
   width: 100%;
   height: 100%;
@@ -118,9 +122,7 @@
 
 .GoodStuff-Text {
   font-size: 23px;
-  bottom: 100px;
   max-width: 500px;
-  bottom: 500px;
   font-family: 'Play-Fair-Display-Bold';
   font-weight: 700;
   font-style: normal;
@@ -142,6 +144,18 @@
   transition: 0.5s;
 }
 
+.GoodStuff-Click {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 30px auto 10px auto;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -154,4 +168,95 @@
   font-weight: 700;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+}
+
+@media (max-width: 800px) {
+  .GoodStuff-Item {
+    display: block;
+  }
+
+  .GoodStuff-Item.active {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .Stuff-Menu {
+    max-height: 100%;
+    margin-top: 20px;
+  }
+  .Stuff-Menu-Item {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 558px) {
+  .GoodStuff-Text {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  .GoodStuff-Subtext {
+    font-size: 15px;
+  }
+
+  .GoodStuff-Click {
+    font-size: 15px;
+  }
+
+  .GoodStuff-Box {
+    top: 100px;
+  }
+
+  .Stuff-Menu-Item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .GoodStuff-Box {
+    top: 70px;
+  }
+}
+
+@media (max-width: 384px) {
+  .GoodStuff-Box {
+    top: 35px;
+  }
+}
+
+@media (max-width: 358px) {
+  .GoodStuff-Box {
+    top: 25px;
+  }
+
+  .GoodStuff-Text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .GoodStuff-Subtext {
+    font-size: 13px;
+  }
+
+  .GoodStuff-Click {
+    font-size: 13px;
+  }
+
+  .Stuff-Menu-Item {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 358px) {
+  .GoodStuff-Box {
+    top: 5px;
+  }
+
+  .GoodStuff-Click {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }

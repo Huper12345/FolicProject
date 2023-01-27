@@ -6,30 +6,28 @@ import './Carousel.css';
 
 const PAGE_WIDTH = 100;
 
-export const Carousel = ({ children, arrowL = "Arrow Left", arrowR = "Arrow Right"}) => {
+export const Carousel = ({
+  children,
+  arrowL = 'Arrow Left',
+  arrowR = 'Arrow Right',
+}) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
 
   const handleLeftArrowClick = () => {
-    console.log('leftArrwoClick');
-
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
 
-      console.log(newOffset);
       return Math.min(newOffset, 0);
     });
   };
 
   const handleRightArrowClick = () => {
-    console.log('RightArrwoClick');
-
     setOffset((currentOffset) => {
       const newOffset = currentOffset - PAGE_WIDTH;
 
       const maxOffset = -(PAGE_WIDTH * (pages.length - 1));
 
-      console.log(newOffset, maxOffset);
       return Math.max(newOffset, maxOffset);
     });
   };
