@@ -28,6 +28,7 @@ export const GoodStuffItem = ({
   dropTitle11,
   dropText11,
   Image,
+  dropLink7,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -82,7 +83,7 @@ export const GoodStuffItem = ({
               </p>
               <p className="Stuff-Text-P">
                 <span className="Stuff-Drop-Title">{dropTitle7}</span>
-                {dropText7}
+                {dropText7}<a href='https://son-by.by/' target="blank" className='Stuff-Drop-Link'>{dropLink7}</a>
               </p>
               <p className="Stuff-Text-P">
                 <span className="Stuff-Drop-Title">{dropTitle8}</span>
