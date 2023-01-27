@@ -1,9 +1,10 @@
 .GoodStuff {
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .GoodStuff-Inner {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
