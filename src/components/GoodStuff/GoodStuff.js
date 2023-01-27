@@ -8,8 +8,8 @@ export const GoodStuff = () => {
     <section className="section">
       <div className="GoodStuff">
         <div className="container">
+          <Title text="Полезные материалы для" subtext="беременных" />
           <div className="GoodStuff-Inner">
-            <Title text="Полезные материалы для" subtext="беременных" />
             <GoodStuffItem
               title="Рацион питания для беременной женщины"
               subText="Во время беременности бывает сложно определить, какие продукты
@@ -72,7 +72,9 @@ export const GoodStuff = () => {
               dropTitle12="Помните! "
               dropText11="Не всегда рацион питания может восполнить дефицит
               фолиевой кислоты, которая необходима Вашему ребенку."
+              Image="https://i.ibb.co/n1j03N7/one.jpg"
             />
+            <GoodStuffItem Image="https://i.ibb.co/m0tXyKp/good-Stuff2v2.jpg" />
           </div>
         </div>
       </div>

@@ -28,6 +28,7 @@
   font-size: 18px;
   max-height: 100%;
   overflow-y: scroll;
+  margin-left: 20px;
 }
 
 #Stuff-Menu-Item::-webkit-scrollbar {
@@ -57,6 +58,10 @@
   max-width: 100%;
   max-height: 600px;
   overflow: hidden;
+}
+
+.GoodStuff-Item.active .GoodStuff-Inner {
+  flex-direction: row;
 }
 
 .GoodStuff-Item:hover .GoodStuff-Image::after {
@@ -91,6 +96,7 @@
 
 .GoodStuff-Image {
   position: relative;
+  max-height: 600px;
 }
 
 .GoodStuff-Image::after {

@@ -27,7 +27,7 @@ export const GoodStuffItem = ({
   dropText10,
   dropTitle11,
   dropText11,
-  dropTitle12,
+  Image,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -43,11 +43,7 @@ export const GoodStuffItem = ({
     >
       <div className="GoodStuff-Content">
         <div className="GoodStuff-Image">
-          <img
-            src="https://i.ibb.co/n1j03N7/one.jpg"
-            alt=""
-            className="GoodStuff-Img"
-          ></img>
+          <img src={Image} alt="" className="GoodStuff-Img"></img>
         </div>
 
         <div className="GoodStuff-Box">
