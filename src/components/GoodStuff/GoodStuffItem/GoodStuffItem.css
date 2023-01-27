@@ -49,6 +49,10 @@
   background: var(--marineblue);
 }
 
+.Stuff-Drop-Title {
+  color: var(--marineblue);
+}
+
 .GoodStuff-Item.active {
   max-width: 100%;
   max-height: 600px;

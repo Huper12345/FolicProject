@@ -2,7 +2,33 @@ import React from 'react';
 import { useState } from 'react';
 import './GoodStuffItem.css';
 
-export const GoodStuffItem = ({ buttonText, droptext }) => {
+export const GoodStuffItem = ({
+  title,
+  subText,
+  dropTitle1,
+  dropText1,
+  dropTitle2,
+  dropText2,
+  dropTitle3,
+  dropText3,
+  dropTitle4,
+  dropText4,
+  dropTitle5,
+  dropText5,
+  dropTitle6,
+  dropText6,
+  dropTitle7,
+  dropText7,
+  dropTitle8,
+  dropText8,
+  dropTitle9,
+  dropText9,
+  dropTitle10,
+  dropText10,
+  dropTitle11,
+  dropText11,
+  dropTitle12,
+}) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -26,15 +52,8 @@ export const GoodStuffItem = ({ buttonText, droptext }) => {
 
         <div className="GoodStuff-Box">
           <div className="GoodStuff-Box-Inner">
-            <h4 className="GoodStuff-Text">
-              Рацион питания для беременной женщины
-            </h4>
-            <div className="GoodStuff-Subtext">
-              Во время беременности бывает сложно определить, какие продукты
-              можно кушать беременным. Чтобы сузить круг вопросов, мы собрали
-              несколько идеальных продуктов, которые следует добавить, чтобы
-              создать сбалансированную диету для беременной женщины.
-            </div>
+            <h4 className="GoodStuff-Text">{title}</h4>
+            <div className="GoodStuff-Subtext">{subText}</div>
           </div>
         </div>
       </div>
@@ -42,49 +61,47 @@ export const GoodStuffItem = ({ buttonText, droptext }) => {
         <ul className="Stuff-Menu">
           <li id="Stuff-Menu-Item" className="Stuff-Menu-Item">
             <div className="Stuff-Menu-Text">
-              Крупы (гречка, рис, пшеница, овес, рожь и др.). Каши не только
-              содержат полезные витамины и аминокислоты, но и являются сложными
-              углеводами, которые долго поддерживают ощущение сытости.
-              <p>
-                Свежие фрукты и овощи. В овощах и фруктах содержатся важные
-                витамины, питательные вещества, волокна и антиоксиданты, –
-                многие из которых играют ключевую роль в развитии и поддержании
-                здоровья ребенка. Разноцветные фрукты и овощи в вашем рационе не
-                только добавят красок, но и привнесут множество витаминов,
-                питательных веществ, волокон и антиоксидантов, важных для
-                здорового протекания беременности.
+              <span className="Stuff-Drop-Title">{dropTitle1}</span>
+              {dropText1}
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle2}</span>
+                {dropText2}
               </p>
-              <p>
-                Мясо. Мясо богато магнием, цинком, витаминами группами В и также
-                всеми важными аминокислотами, служит основным поставщиком железа
-                в организм, которое просто необходимо для построения
-                кроветворной системы будущего малыша.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle3}</span>
+                {dropText3}
               </p>
-              <p>
-                Темная листовая зелень. Беременны вы или нет, всегда полезно
-                есть зелень. Темные и листовые овощи, такие как капуста, шпинат
-                и брокколи, богаты фолатами и другими витаминами.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle4}</span>
+                {dropText4}
               </p>
-              <p>
-                Бобовые. Чечевица особенно богата фолиевой кислотой. Другие
-                бобовые, такие как фасоль и горох, содержат белок, и они дадут
-                ощущение сытости, а также будут питать вашего растущего ребенка.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle5}</span>
+                {dropText5}
               </p>
-              <p>
-                Йогурт и другие виды молочных продуктов. Жирный йогурт содержит
-                меньше сахара, чем его обезжиренные версии, он более вкусный и
-                содержит много кальция.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle6}</span>
+                {dropText6}
               </p>
-              <p>
-                Сладкий картофель, морковь, сладкий перец. Красные, оранжевые и
-                желтые овощи не только делают вашу тарелку красивой и красочной,
-                но и содержат бета-каротин, который превращается в витамин А.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle7}</span>
+                {dropText7}
               </p>
-              <p>
-                Лосось и другие жирные виды рыбы. Лосось - отличный источник
-                жирных кислот омега-3. Многие беременные женщины вообще избегают
-                рыбы, но одна или две порции этого блюда в неделю - отличный
-                вариант обеда или ужина.
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle8}</span>
+                {dropText8}
+              </p>
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle9}</span>
+                {dropText9}
+              </p>
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle10}</span>
+                {dropText10}
+              </p>
+              <p className="Stuff-Text-P">
+                <span className="Stuff-Drop-Title">{dropTitle11}</span>
+                {dropText11}
               </p>
             </div>
           </li>
