@@ -4,7 +4,7 @@ import "./Advantages.css";
 import { PlusIcon } from "./PlusIcon";
 
 
-export const Advantages = ({buttonText, droptext}) => {
+export const Advantages = ({buttonText, droptext, subtext}) => {
     const [open, setOpen] = useState(false);
   
     const handleOpen = () => {
@@ -22,7 +22,7 @@ export const Advantages = ({buttonText, droptext}) => {
         {open ? (
           <ul className="Dropdown-Menu">
             <li className="Drop-Menu-Item">
-              <h3 className="Drop-Menu-Text">{droptext}</h3>
+              <h3 className="Drop-Menu-Text">{droptext}<p className="Advantages-Menu-Subtext">{subtext}</p></h3>
             </li>
           </ul>
         ) : null}

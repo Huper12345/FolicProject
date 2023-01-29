@@ -1,7 +1,7 @@
 import React from "react"
 import "./Product.css";
 import { ProductImage } from "./ProductImage";
-import { Advantages } from "./Advantages";
+import { Advantages } from "../../../helpers/Advantages";
 
 export const Product = () => {
   return (

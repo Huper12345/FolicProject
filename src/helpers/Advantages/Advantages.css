@@ -1,6 +1,4 @@
 
-
-
 .Advantages-Button {
     cursor: pointer;
     border: 0;
@@ -14,7 +12,7 @@
     font-size: 23px;
     color: var(--lightblack);
     text-align: left;
-    max-width: 650px;
+    max-width: 100%;
     user-select: none;
 }
 
@@ -44,6 +42,10 @@
     color: var(--middlegray);
     text-align: justify;
     user-select: none;
+}
+
+.Advantages-Menu-Subtext {
+    margin-top: 10px;
 }
 
 @font-face {
