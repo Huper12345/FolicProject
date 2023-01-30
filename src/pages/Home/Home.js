@@ -7,6 +7,7 @@ import { GoodForYou } from '../../components/GoodForYou';
 import { BabyCalculator } from '../../components/BabyCalculator';
 import { GoodStuff } from '../../components/GoodStuff';
 import { FAquestions } from '../../components/FAquestions';
+import { Footer } from '../../components/Footer';
 
 export const Home = () => {
   return (
@@ -18,6 +19,7 @@ export const Home = () => {
       <BabyCalculator />
       <GoodStuff />
       <FAquestions />
+      <Footer />
     </div>
   );
 };

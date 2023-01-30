@@ -6,15 +6,19 @@
 .Text-Intro-Box {
   width: 570px;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 15px 10px 40px 45px;
-  border-radius: 50px;
+  padding: 25px 10px 40px 55px;
+  border-radius: 78px;
   border-bottom-left-radius: 0;
-  border-top-left-radius: 80px;
+  border-top-left-radius: 120px;
+  border-bottom-right-radius: 120px;
   transition: 0.3s;
+  box-shadow: 10px 15px 35px rgba(227, 10, 59, 0.7);
 }
 
 .Text-Intro-Box:hover {
   background-color: rgba(255, 255, 255, 0.9);
+  padding: 35px 35px 45px 60px;
+  width: 580px;
 }
 
 .Text-Intro {
