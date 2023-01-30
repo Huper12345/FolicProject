@@ -79,7 +79,7 @@
   height: 150px;
   padding: 10px 10px 10px 10px;
   background-color: var(--white);
-  color: var(--white);
+  color: var(--darkpink);
   border: 2px solid var(--darkpink);
   border-radius: 10px;
   transition: 0.2s;

@@ -34,16 +34,21 @@ export const DoctorQuestion = () => {
       )
       .then(
         (result) => {
-          alert('Вопрос отправлен!');
+          setTextArea('Успешно отправлено');
+          setTimeout(() => {
+            setTextArea('');
+          }, 4000);
         },
         (error) => {
-          alert('Что-то пошло не так...');
+          setTextArea('Что-то пошло не так...');
+          setTimeout(() => {
+            setTextArea('');
+          }, 4000);
         }
       );
 
     setNameText('');
     setEmailText('');
-    setTextArea('');
   };
 
   return (
