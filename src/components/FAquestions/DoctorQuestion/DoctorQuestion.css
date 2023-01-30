@@ -63,6 +63,11 @@
 .Question-Input:focus {
   outline: 0;
   background-color: var(--darkpink);
+  color: var(--white);
+}
+
+.Question-Input:focus::placeholder {
+  color: var(--white);
 }
 
 .Question-Message {
@@ -101,6 +106,11 @@
 .Question-Message:focus {
   outline: 0;
   background-color: var(--darkpink);
+  color: var(--white);
+}
+
+.Question-Message:focus::placeholder {
+  color: var(--white);
 }
 
 .QuestionButton {
