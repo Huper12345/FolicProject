@@ -6,12 +6,12 @@ import { Subscription } from "../../helpers/Subcsription";
 
 export const Medication = () => {
   return (
-    <section className="section">
+    <section className="section" id="Medication">
       <div className="container">
         <div className="Medication">
-          < Title text="Препарат рекомендованный" subtext="воз" href="https://www.who.int/ru" />
-          < Product />
-          < Subscription subtext="Borimed" href="https://borimed.com/" text=" является единственным белорусским производителем фолиевой кислоты в дозировке 0,4 мг в качестве лекарственного препарата." />
+          <Title text="Препарат рекомендованный" subtext="воз" href="https://www.who.int/ru" />
+          <Product />
+          <Subscription subtext="Borimed" href="https://borimed.com/" text=" является единственным белорусским производителем фолиевой кислоты в дозировке 0,4 мг в качестве лекарственного препарата." />
         </div>
       </div>
     </section>

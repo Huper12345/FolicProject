@@ -52,7 +52,7 @@ export const DoctorQuestion = () => {
   };
 
   return (
-    <div className="DoctorQuestion-Container">
+    <div className="DoctorQuestion-Container" id='DoctorQuestion'>
       <h2 className="Doctor-Question-Title"> Вопрос врачу</h2>
       <form
         onSubmit={sendEmail}

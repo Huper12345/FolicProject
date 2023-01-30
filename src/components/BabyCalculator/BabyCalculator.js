@@ -6,7 +6,7 @@ import { SeText } from './SeText';
 
 export const BabyCalculator = () => {
   return (
-    <section className="section">
+    <section className="section" id='BabyCalculator'>
       <div className="container">
         <Title
           className="Title-Text babycalculator"

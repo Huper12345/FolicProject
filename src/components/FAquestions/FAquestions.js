@@ -7,7 +7,7 @@ import { DoctorQuestion } from "./DoctorQuestion";
 
 export const FAquestions = () => {
   return (
-    <section className="section section-faquestion">
+    <section className="section section-faquestion" id="FAquestions">
       <div className="container">
         <div className="FAquestions">
           < Title text="Часто задаваемые" subtext="вопросы"/>

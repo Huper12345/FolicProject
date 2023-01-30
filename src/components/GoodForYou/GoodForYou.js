@@ -6,7 +6,7 @@ import Slide1 from '../../helpers/assets/Images/GoodForYou-Pack/1.png';
 
 export const GoodForYou = () => {
   return (
-    <section className="section section--goodforyou">
+    <section className="section section--goodforyou" id='GoodForYou'>
       <div className="container">
         <div className="GoodForYou">
           <Carousel>

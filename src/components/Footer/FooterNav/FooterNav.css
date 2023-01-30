@@ -15,11 +15,12 @@
     margin: 5px 0;
     cursor: pointer;
     text-decoration: none;
-    transition: 0.1s;
+    transition: 0.2s;
   }
   
   .Footer-Nav-Link:hover {
     color: brown;
+    transition: 0.2s;
   }
   
   @font-face {
