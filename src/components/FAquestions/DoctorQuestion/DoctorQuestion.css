@@ -1,5 +1,128 @@
+.Doctor-Question-Title {
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  color: var(--darkpink);
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.DoctorQuestion-Container {
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 320px;
+}
+
 .Question-Form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.Question-Input {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  width: 100%;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid var(--darkpink);
+  background-color: var(--white);
+  margin-bottom: 5px;
+  border-radius: 10px;
+  transition: 0.2s;
+  color: var(--darkpink);
+  cursor: pointer;
+}
+
+.Question-Input::placeholder {
+  color: var(--darkpink);
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.Question-Input:hover {
+  background-color: var(--darkpink);
+  color: var(--white);
+}
+
+.Question-Input:hover {
+  color: var(--white);
+}
+
+.Question-Input:focus {
+  outline: 0;
+  background-color: var(--darkpink);
+}
+
+.Question-Message {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  resize: vertical;
+  height: 150px;
+  padding: 10px 10px 10px 10px;
+  background-color: var(--white);
+  color: var(--white);
+  border: 2px solid var(--darkpink);
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+.Question-Message::placeholder {
+  color: var(--darkpink);
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.Question-Message:hover {
+  background-color: var(--darkpink);
+}
+
+.Question-Message:focus {
+  outline: 0;
+  background-color: var(--darkpink);
+}
+
+.QuestionButton {
+  border: 0;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: var(--darkpink);
+  border-radius: 40px;
+  padding: 14px 15px 15px 14px;
+  color: var(--white);
+  transition: 0.2s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.QuestionButton:hover {
+  background-color: var(--brown);
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
 }

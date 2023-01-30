@@ -48,7 +48,7 @@ export const DoctorQuestion = () => {
 
   return (
     <div className="DoctorQuestion-Container">
-      <h2 className="Doctor-Question-Title"> Задать вопрос врачу</h2>
+      <h2 className="Doctor-Question-Title"> Вопрос врачу</h2>
       <form
         onSubmit={sendEmail}
         ref={form}
@@ -56,6 +56,7 @@ export const DoctorQuestion = () => {
         className="Question-Form"
       >
         <input
+          required
           type="text"
           placeholder="Ваше имя"
           className="Question-Input"
@@ -64,6 +65,7 @@ export const DoctorQuestion = () => {
           onChange={nameSelect}
         ></input>
         <input
+          required
           type="email"
           placeholder="Email-адрес"
           className="Question-Input"
@@ -72,6 +74,7 @@ export const DoctorQuestion = () => {
           onChange={emailSelect}
         ></input>
         <textarea
+          required
           placeholder="Напишите вопрос"
           name="message"
           className="Question-Message"
