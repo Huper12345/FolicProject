@@ -1,56 +1,56 @@
-
 .Advantages-Button {
-    cursor: pointer;
-    border: 0;
-    background-color: inherit;
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 23px;
-    color: var(--lightblack);
-    text-align: left;
-    max-width: 100%;
-    user-select: none;
+  cursor: pointer;
+  border: 0;
+  background-color: inherit;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 23px;
+  color: var(--lightblack);
+  text-align: left;
+  max-width: 100%;
+  user-select: none;
 }
 
 .Advantages-Button:hover {
-    color: var(--brown);
-    transition: 0.1s;
+  color: var(--brown);
+  transition: 0.1s;
 }
 
 .Advantages-Button.active {
-    color: var(--brown);
+  color: var(--brown);
 }
 
 .Advantages-Button.active .PlusIcon {
-    color: var(--marineblue);
+  color: var(--marineblue);
 }
 
 .Dropdown-Menu {
-    display: flex;
-    padding: 1px 5px 5px 62px;
+  display: flex;
+  padding: 1px 5px 5px 62px;
 }
 
 .Drop-Menu-Text {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: var(--middlegray);
-    text-align: justify;
-    user-select: none;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--middlegray);
+  text-align: justify;
+  user-select: none;
+  max-width: 67%;
 }
 
 .Advantages-Menu-Subtext {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-  }
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}

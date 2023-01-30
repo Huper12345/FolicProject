@@ -1,0 +1,11 @@
+.FAquestion-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.section-faquestion {
+  padding: 5px 0 50px 0;
+}
