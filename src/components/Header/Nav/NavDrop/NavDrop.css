@@ -1,0 +1,95 @@
+.NavDrop {
+  position: absolute;
+  left: -160px;
+  z-index: 1000;
+  max-width: 350px;
+  height: 140px;
+}
+
+.NavDrop-Button {
+  font-size: 21px;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 25px 0 0;
+  position: relative;
+  z-index: 1200;
+  transition: 0.3s;
+  padding: 0 15px;
+}
+
+.NavDrop-Button::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--darkpink);
+  border-left: 2px solid var(--darkpink);
+  position: absolute;
+  top: 5px;
+  left: -4px;
+  z-index: 1200;
+  transform: rotate(-135deg);
+  transition: 0.3s;
+}
+
+.NavDrop-Button:hover {
+  color: var(--brown);
+  transition: 0.1s;
+}
+
+.NavDrop-Button:hover::before {
+  border-color: var(--marineblue);
+  transform: rotate(43deg);
+  top: 10px;
+}
+
+.NavDrop-Button.active {
+  color: var(--brown);
+}
+
+.NavDrop-Button.active::before {
+  border-color: var(--marineblue);
+  transform: rotate(43deg);
+  top: 10px;
+}
+
+.NavDrop-Menu {
+  padding: 5px 10px 15px 15px;
+  margin-top: 10px;
+  background-color: var(--white);
+  border-radius: 5px;
+  max-width: 190px;
+}
+
+.NavDrop-Link {
+  font-family: 'Play-Fair-Display-Regular';
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--darkpink);
+  text-align: left;
+  user-select: none;
+  text-decoration: none;
+  max-width: 100%;
+  margin-bottom: 10px;
+  transition: 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.NavDrop-Link:hover {
+  color: var(--marineblue);
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
