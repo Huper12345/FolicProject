@@ -2,7 +2,7 @@
   position: absolute;
   left: -160px;
   z-index: 1000;
-  max-width: 100%;
+  max-width: 350px;
   height: 140px;
 }
 
@@ -19,6 +19,7 @@
   position: relative;
   z-index: 1200;
   transition: 0.3s;
+  padding: 0 15px;
 }
 
 .NavDrop-Button::before {
@@ -30,7 +31,7 @@
   border-left: 2px solid var(--darkpink);
   position: absolute;
   top: 5px;
-  left: -16px;
+  left: -4px;
   z-index: 1200;
   transform: rotate(-135deg);
   transition: 0.3s;
@@ -58,11 +59,11 @@
 }
 
 .NavDrop-Menu {
-  padding: 5px 10px 15px 5px;
+  padding: 5px 10px 15px 15px;
   margin-top: 10px;
   background-color: var(--white);
   border-radius: 5px;
-  max-width: 160px;
+  max-width: 190px;
 }
 
 .NavDrop-Link {
@@ -70,9 +71,9 @@
   display: block;
   font-weight: 400;
   font-style: normal;
-  font-size: 19px;
+  font-size: 20px;
   color: var(--darkpink);
-  text-align: justify;
+  text-align: left;
   user-select: none;
   text-decoration: none;
   max-width: 100%;

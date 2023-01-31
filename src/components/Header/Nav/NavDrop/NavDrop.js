@@ -16,6 +16,9 @@ export const NavDrop = ({
   target1 = '',
   target2 = '',
   target3 = '',
+  droptext4,
+  href4 = '#',
+  target4 = '',
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -68,6 +71,16 @@ export const NavDrop = ({
               className="NavDrop-Link"
             >
               {droptext3}
+            </a>
+          </li>
+          <li className="NavDrop-Item">
+            <a
+              onClick={handleClose}
+              href={href4}
+              target={target4}
+              className="NavDrop-Link"
+            >
+              {droptext4}
             </a>
           </li>
         </ul>

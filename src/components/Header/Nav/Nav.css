@@ -1,6 +1,7 @@
 .Nav {
-  display: flex;
   position: relative;
+  width: 585px;
+  padding-bottom: 20px;
 }
 
 .Nav-Link {
@@ -10,14 +11,27 @@
   font-style: normal;
   text-transform: uppercase;
   color: var(--white);
-  margin: 0 25px 0 0;
   cursor: pointer;
   text-decoration: none;
   transition: 0.1s;
+  position: absolute;
+  padding: 0 5px;
 }
 
 .Nav-Link:hover {
   color: brown;
+}
+
+.NavDrop.pregant {
+  left: 178px;
+}
+
+.NavDrop.product {
+  left: 0;
+}
+
+.Nav-Link {
+  right: 0;
 }
 
 @font-face {
