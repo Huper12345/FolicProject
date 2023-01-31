@@ -2,7 +2,6 @@
   min-height: 400px;
   background: linear-gradient(var(--lightpink), var(--middlepink));
   height: 100vh;
-  max-height: 920px;
 }
 
 .Intro-Inner {
@@ -14,10 +13,9 @@
 }
 
 .Intro-Background {
-  max-height: 920px;
   height: 100%;
   position: absolute;
-  right: 0;
+  right: -30px;
   top: 0;
   z-index: 2;
 }

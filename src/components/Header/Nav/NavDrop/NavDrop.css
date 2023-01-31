@@ -2,7 +2,7 @@
   position: absolute;
   left: -160px;
   z-index: 1000;
-  max-width: 350px;
+  max-width: 360px;
   height: 140px;
 }
 
@@ -63,7 +63,7 @@
   margin-top: 10px;
   background-color: var(--white);
   border-radius: 5px;
-  max-width: 190px;
+  max-width: 195px;
 }
 
 .NavDrop-Link {
