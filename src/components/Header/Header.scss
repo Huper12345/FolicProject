@@ -11,6 +11,19 @@
   .Header {
   background-color: var(--lightpink);
   position: relative;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
+
+.Header.is-sticky {
+  position: fixed;
+  background-color: var(--lightpink);
+  right: 0;
+  height: 90px;
+  z-index: 1500;
+  box-shadow: 5px 5px 5px rgba(227, 10, 59, 0.7);
+}
+
+
 

@@ -16,11 +16,9 @@ export const TextBlock = () => {
           href="Medication" 
           text="Подробнее" />
           
-          <TextButton
-            href="https://tabletka.by/result?ls=21024"
-            target="blank"
-            text="Где купить?"
-          />
+          <a className='TextButton Link' href="https://tabletka.by/result?ls=21024" target="blank">
+            Где купить?
+          </a>
         </div>
       </div>
     </div>
