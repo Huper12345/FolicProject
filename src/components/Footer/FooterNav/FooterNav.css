@@ -1,32 +1,31 @@
 .Footer-Nav {
-    margin-right: 20px;
-    max-width: 250px;
-  }
-  
-  .Footer-Nav-Link {
-    display: block;
-    font-size: 19px;
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    text-transform: uppercase;
-    color: var(--white);
-    margin: 5px 0;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  
-  .Footer-Nav-Link:hover {
-    color: brown;
-    transition: 0.2s;
-  }
-  
-  @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-  }
-  
+  margin-right: 20px;
+  max-width: 250px;
+}
+
+.Footer-Nav-Link {
+  display: block;
+  font-size: 19px;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.Footer-Nav-Link:hover {
+  color: brown;
+  transition: 0.2s;
+}
+
+@font-face {
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
