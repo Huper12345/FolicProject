@@ -10,9 +10,9 @@ export const Header = () => {
   
   const [sticky, setSticky] = useState("");
 
+
   // on render, set listener
   useEffect(() => {
-    console.log("hello");
     window.addEventListener("scroll", isSticky);
     return () => {
       window.removeEventListener("scroll", isSticky);
@@ -20,19 +20,18 @@ export const Header = () => {
   }, []);
 
   const isSticky = () => {
-    /* Method that will fix header after a specific scrollable */
+    const introHeight = document.querySelector("#Intro").offsetHeight
     const scrollTop = window.scrollY;
-    const stickyClass = scrollTop >= 250 ? "is-sticky" : "";
+    const stickyClass = scrollTop >= introHeight ? "is-sticky" : "";
     setSticky(stickyClass);
-    console.log(stickyClass);
   };
 
   const classes = `Header ${sticky}`;
   
   return (
-    <div className={classes}>
+    <div  id="Header" className={classes}>
       <div className="container">
-        <header className="Header__inner">
+        <header id="Header__inner" className="Header__inner">
             <Logo />
             <Nav />
           </header>

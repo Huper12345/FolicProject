@@ -3,9 +3,12 @@ import './Intro.scss';
 import Girl from '../../helpers/assets/Images/dev2.webp';
 import { TextBlock } from './TextBlock';
 
+
 export const Intro = () => {
+  
+  
   return (
-    <div className="Intro">
+    <div id="Intro" className="Intro">
       <div className="container">
         <div className="Intro-Inner">
           <TextBlock />
@@ -13,7 +16,6 @@ export const Intro = () => {
             className="Intro-Background"
             alt="Girl"
             src="https://i.ibb.co/1MyHGxF/devushka6.png"
-            alt="devushka3"
           ></img>
         </div>
       </div>

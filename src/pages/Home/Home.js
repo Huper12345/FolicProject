@@ -9,11 +9,13 @@ import { GoodStuff } from '../../components/GoodStuff';
 import { FAquestions } from '../../components/FAquestions';
 import { Footer } from '../../components/Footer';
 
-export const Home = () => {
+export const Home = (props) => {
+  
+
   return (
     <div className="Home">
-      <Header />
-      <Intro />
+      <Header  />
+      <Intro  />
       <Medication />
       <GoodForYou />
       <BabyCalculator />

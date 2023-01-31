@@ -1,6 +1,7 @@
 import React from 'react';
 import './Nav.css';
 import { NavDrop } from './NavDrop';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Nav = () => {
   return (
@@ -9,13 +10,11 @@ export const Nav = () => {
         buttonText="О препарате"
         href="Medication"
         droptext="Инструкция"
-        href1="Contacts-Container"
-        droptext2="Вопрос врачу"
-        href2="DoctorQuestion"
-        droptext3="Часто задаваемые вопросы"
-        href3="FAquestions"
-        droptext4="О производителе"
-        href4="Contacts"
+        href1="Contacts"
+        droptext2="Часто задаваемые вопросы"
+        href2="FAquestions"
+        droptext3="О производителе"
+        href3="Contacts"
         NavClass="NavDrop product"
       />
       <NavDrop
@@ -29,9 +28,14 @@ export const Nav = () => {
         href3="FAquestions"
         NavClass="NavDrop pregant"
       />
-      <a href="#" className="Nav-Link">
+      <Link 
+      to="DoctorQuestion"
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Nav-Link">
         Задать вопрос
-      </a>
+      </Link>
     </nav>
   );
 };

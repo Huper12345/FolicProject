@@ -30,7 +30,6 @@ export const NavDrop = ({
     <div className={NavClass} onMouseLeave={handleClose}>
         <Link
         to={href}
-        spy={true}
         smooth={true}
         offset={-70}
         duration={600}
