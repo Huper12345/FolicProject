@@ -64,6 +64,7 @@
   background-color: var(--white);
   border-radius: 5px;
   max-width: 195px;
+  cursor: pointer;
 }
 
 .NavDrop-Link {

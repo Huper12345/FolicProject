@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './NavDrop.css';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const NavDrop = ({
   buttonText,
@@ -12,13 +13,8 @@ export const NavDrop = ({
   href1 = '#',
   href2 = '#',
   href3 = '#',
-  target = '',
-  target1 = '',
-  target2 = '',
-  target3 = '',
   droptext4,
   href4 = '#',
-  target4 = '',
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -32,56 +28,71 @@ export const NavDrop = ({
 
   return (
     <div className={NavClass} onMouseLeave={handleClose}>
-      <a
-        href={href}
-        target={target}
+        <Link
+        to={href}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={600}
         onMouseEnter={handleOpen}
         className={open ? 'NavDrop-Button active' : 'NavDrop-Button'}
         onClick={handleClose}
       >
         {buttonText}
-      </a>
+      </Link>
       {open ? (
         <ul className="NavDrop-Menu">
           <li className="NavDrop-Item">
-            <a
+            <Link
+              to={href1}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={600}
               onClick={handleClose}
-              href={href1}
-              target={target1}
               className="NavDrop-Link"
             >
               {droptext}
-            </a>
+            </Link>
           </li>
           <li className="NavDrop-Item">
-            <a
+            <Link
+              to={href2}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={600}
               onClick={handleClose}
-              href={href2}
-              target={target2}
               className="NavDrop-Link"
             >
               {droptext2}
-            </a>
+            </Link>
           </li>
           <li className="NavDrop-Item">
-            <a
+            <Link
+              to={href3}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={600}
               onClick={handleClose}
-              href={href3}
-              target={target3}
               className="NavDrop-Link"
             >
               {droptext3}
-            </a>
+            </Link>
           </li>
           <li className="NavDrop-Item">
-            <a
+            <Link
+              to={href4}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={600}
               onClick={handleClose}
-              href={href4}
-              target={target4}
               className="NavDrop-Link"
             >
               {droptext4}
-            </a>
+            </Link>
           </li>
         </ul>
       ) : null}

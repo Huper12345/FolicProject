@@ -1,27 +1,71 @@
 import React from 'react';
 import './FooterNav.css';
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
 export const FooterNav = () => {
   return (
     <nav className="Footer-Nav">
-      <a href="#Medication" className="Footer-Nav-Link">
+      <Link 
+      to="Medication"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Footer-Nav-Link">
         О препарате
-      </a>
-      <a href="#DoctorQuestion" className="Footer-Nav-Link">
+      </Link>
+
+      <Link 
+       to="DoctorQuestion"
+       spy={true}
+       smooth={true}
+       offset={-70}
+       duration={600}
+       className="Footer-Nav-Link">
         Задать вопрос
-      </a>
-      <a href="#GoodForYou" className="Footer-Nav-Link">
+      </Link>
+
+      <Link 
+      to="GoodForYou"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Footer-Nav-Link">
         Полезные советы беременным
-      </a>
-      <a href="#BabyCalculator" className="Footer-Nav-Link">
+      </Link>
+
+      <Link 
+      to="BabyCalculator"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Footer-Nav-Link">
         Калькулятор пола ребенка
-      </a>
-      <a href="#GoodStuff" className="Footer-Nav-Link">
+      </Link>
+
+      <Link 
+      to="GoodStuff"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Footer-Nav-Link">
         Полезные материалы для беременных
-      </a>
-      <a href="#FAquestions" className="Footer-Nav-Link">
+      </Link>
+
+      <Link 
+      to="FAquestions"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={600}
+      className="Footer-Nav-Link">
         Часто задаваемые вопросы
-      </a>
+      </Link>
+
       <a href="https://tabletka.by/result?ls=21024" target="blank" className="Footer-Nav-Link">
         Где купить?
       </a>
