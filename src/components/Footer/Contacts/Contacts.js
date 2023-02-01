@@ -15,12 +15,13 @@ export const Contacts = () => {
         ПРОКОНСУЛЬТИРУЙТЕСЬ С ВРАЧОМ
       </h3>
 
-      <TextButton
-        text="Открыть инструкцию"
+      <a
         href="https://www.rceth.by/NDfiles/instr/23_01_3103_s.pdf"
         target="blank"
         className="TextButton Footer"
-      />
+      >
+        Открыть инструкцию
+      </a>
     </div>
   );
 };

@@ -48,6 +48,31 @@
   margin-top: 10px;
 }
 
+@media (max-width: 989px) {
+  .Advantages-Box {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 230px;
+  }
+
+  .Advantages-Button {
+    max-width: 100%;
+  }
+
+  .Advantages-Button.active .Advantages-Box {
+    width: 100%;
+  }
+
+  .Drop-Menu-Text {
+    max-width: 100%;
+  }
+
+  .Dropdown-Menu {
+    max-width: 100%;
+  }
+}
+
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;

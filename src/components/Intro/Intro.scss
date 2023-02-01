@@ -19,3 +19,33 @@
   top: 0;
   z-index: 2;
 }
+
+@media (max-width: 1197px) {
+  .Intro-Background {
+    right: -60px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .Intro-Background {
+    right: -120px;
+  }
+}
+
+@media (max-width: 1111px) {
+  .Intro-Background {
+    right: -180px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .Intro-Background {
+    right: -240px;
+  }
+}
+
+@media (max-width: 989px) {
+  .Intro-Background {
+    display: none;
+  }
+}
