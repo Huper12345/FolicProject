@@ -1,15 +1,24 @@
 .ProducImage-Img {
-    display: block;
-    max-width: 800px;
-    height: auto;
-    position: absolute;
-    z-index: 0;
-    margin-left: 40px;
-    user-select: none;
+  display: block;
+  max-width: 800px;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+  margin-left: 40px;
+  user-select: none;
 }
 
 .ProducImage {
-    width: 50%;
-    position: relative;
-    user-select: none;
+  width: 50%;
+  user-select: none;
+}
+
+@media (max-width: 989px) {
+  .ProducImage {
+    width: 100%;
+  }
+
+  .ProducImage-Img {
+    max-width: 100%;
+  }
 }

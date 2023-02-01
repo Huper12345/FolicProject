@@ -5,3 +5,9 @@
   justify-content: center;
   margin-bottom: 10px;
 }
+
+@media (max-width: 989px) {
+  .Medication {
+    flex-wrap: wrap;
+  }
+}

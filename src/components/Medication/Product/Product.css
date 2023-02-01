@@ -1,11 +1,52 @@
 .Product {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .Advantages-Box {
+  width: 50%;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (max-width: 989px) {
+  .Product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ProducImage-Img {
+    max-width: 100%;
+    position: absolute;
+    left: 73%;
+    transform: translateX(-73%);
+  }
+
+  .ProducImage {
     width: 50%;
     position: relative;
-    z-index: 1000;
+  }
+
+  .Product {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 834px) {
+  .ProducImage-Img {
+    max-width: 100%;
+    position: absolute;
+    left: 83%;
+    transform: translateX(-83%);
+  }
+}
+
+@media (max-width: 783px) {
+  .ProducImage-Img {
+    max-width: 100%;
+    position: absolute;
+    left: 93%;
+  }
 }

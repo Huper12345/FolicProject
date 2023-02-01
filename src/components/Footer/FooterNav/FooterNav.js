@@ -71,12 +71,6 @@ export const FooterNav = () => {
       >
         Часто задаваемые вопросы
       </Link>
-
-      <a
-        href="https://www.rceth.by/NDfiles/instr/23_01_3103_s.pdf"
-        target="blank"
-        className="TextButton Footer"
-      ></a>
     </nav>
   );
 };
