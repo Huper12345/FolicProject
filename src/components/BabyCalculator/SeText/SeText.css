@@ -27,3 +27,59 @@
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
+
+
+@media (max-width: 1197px) {
+  .SeText-Container {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SeText-Content {
+    max-width: 80%;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 512px) {
+  
+  .SeImg {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+
+
+@media (max-width: 583px) {
+  
+  .SeText-Content {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 429px) {
+  
+  .SeImg {
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 374px) {
+  
+  .SeText-Content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 352px) {
+  
+  .SeImg {
+    max-width: 210px;
+    height: auto;
+  }
+}
+

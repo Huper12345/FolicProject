@@ -22,6 +22,14 @@
     color: var(--brown);
 }
 
+@media (max-width: 553px) {
+    .Title-Text {
+        font-size: 19px;
+    }
+  }
+
+
+
 @font-face {
     font-family: 'Play-Fair-Display-Bold';
     font-weight: 700;

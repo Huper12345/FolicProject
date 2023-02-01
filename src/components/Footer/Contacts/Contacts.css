@@ -32,4 +32,16 @@ font-size: 18px;
     font-style: normal;
     src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
   }
+
+  @media (max-width: 734px) {
+    .Contacts-Title {
+        font-size: 16px;
+    }
+
+    .Contacts-Subtext{
+        font-size: 16px;
+    }
+  
+  }
+  
   

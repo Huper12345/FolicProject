@@ -40,3 +40,11 @@
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
+
+
+@media (max-width: 988px) {
+  .Nav {
+   display: none;
+  }
+
+}

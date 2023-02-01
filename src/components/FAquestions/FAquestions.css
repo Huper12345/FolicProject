@@ -9,3 +9,10 @@
 .section-faquestion {
   padding: 5px 0 100px 0;
 }
+
+@media (max-width: 1089px) {
+  .FAquestion-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

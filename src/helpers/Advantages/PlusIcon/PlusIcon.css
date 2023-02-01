@@ -5,6 +5,7 @@
   cursor: pointer;
   transition: 0.1s;
   margin-right: 2px;
+  flex: none;
 }
 
 .Advantages-Button:hover .Plus-Icon {
@@ -14,4 +15,19 @@
 .Plus-Icon.active {
   fill: var(--marineblue);
   transform: rotate(45deg);
+}
+
+
+@media (max-width: 609px) {
+  .Plus-Icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 358px) {
+  .Plus-Icon {
+    width: 35px;
+    height: 35px;
+  }
 }

@@ -53,29 +53,6 @@
   align-items: center;
 }
 
-.TextButton.Link {
-  max-width: 200px;
-  height: 55px;
-  background-color: var(--darkpink);
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.1s;
-  
-  font-size: 23px;
-  font-family: 'Play-Fair-Display-Regular';
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  color: var(--white);
-  text-transform: uppercase;
-  padding: 13px 15px 13px 15px;
-}
-
-.TextButton.Link:hover {
-  background-color: brown;
-}
-
-
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -89,4 +66,110 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
+
+@media (max-width: 988px) {
+  .TextBlock {
+    margin-left: 15%;
+    transform: translateX(-15%);
+  }
+}
+
+@media (max-width: 884px) {
+  .TextBlock {
+    margin-left: 23%;
+  }
+}
+
+@media (max-width: 732px) {
+  .TextBlock {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 681px) {
+  .TextBlock {
+    margin-left: 29%;
+  }
+}
+
+
+@media (max-width: 625px) {
+  .Text-Intro-Box {
+    width: 500px;
+  }
+
+  .Text-Intro {
+    font-size: 35px;
+  }
+
+  .Text-Intro-Dosage {
+    font-size: 50px;
+    padding-left: 6px;
+  }
+
+}
+
+@media (max-width: 535px) {
+  .Text-Intro-Box {
+    width: 460px;
+  }
+}
+
+@media (max-width: 519px) {
+  .Text-Intro-Box {
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 10px 40px 37px;
+  }
+
+  .Text-Intro {
+    font-size: 28px;
+  }
+
+  .Button-Box {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    align-items: center;
+  }
+
+  .Text-Intro-Dosage {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 435px) {
+  .Text-Intro-Box {
+    width: 350px;
+    height: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 10px 40px 37px;
+  }
+
+  .Text-Intro {
+    font-size: 28px;
+  }
+
+  .Button-Box {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .Text-Intro-Dosage {
+    font-size: 40px;
+  }
+
 }

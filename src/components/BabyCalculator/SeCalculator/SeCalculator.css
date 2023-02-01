@@ -146,3 +146,28 @@
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
+
+
+
+@media (max-width: 374px) {
+  
+  .BabyInput {
+    font-size: 16px;
+  }
+
+  .BabyButton {
+    font-size: 16px;
+  }
+
+  .Baby-Title {
+    font-size: 16px;
+  }
+
+  .Woman-Text {
+    font-size: 16px;
+  }
+
+  .Woman-Text.Woman-Text.SeDate {
+    font-size: 16px;
+  }
+}

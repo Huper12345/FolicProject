@@ -71,7 +71,88 @@
   .Dropdown-Menu {
     max-width: 100%;
   }
+
 }
+
+
+@media (max-width: 609px) {
+  .Advantages-Button {
+    font-size: 20px;
+  }
+
+  .Drop-Menu-Text {
+    font-size: 17px;
+  }
+
+  .Dropdown-Menu {
+    display: flex;
+    padding: 1px 5px 5px 56px;
+  }
+}
+
+@media (max-width: 532px) {
+  .Advantages-Button {
+    font-size: 18px;
+  }
+
+  .Dropdown-Menu {
+    display: flex;
+    padding: 1px 5px 5px 52px;
+  }
+
+  .Advantages-Box {
+    margin-top: 200px;
+  }
+
+}
+
+@media (max-width: 466px) {
+  .Advantages-Box{
+    margin-top: 150px;
+  }
+
+  .Drop-Menu-Text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 358px) {
+  .Advantages-Button {
+    font-size: 16px;
+  }
+
+  .Advantages-Box{
+    margin-top: 120px;
+  }
+
+  .Drop-Menu-Text {
+    font-size: 14px;
+  }
+
+  .Dropdown-Menu {
+    display: flex;
+    padding: 1px 25px 5px 42px;
+  }
+
+
+}
+
+@media (max-width: 323px) {
+  .Advantages-Button {
+    font-size: 16px;
+    padding-right: 25px;
+  }
+
+  .Dropdown-Menu {
+    display: flex;
+    padding: 1px 25px 5px 0px;
+    margin: 0 25px 0 30px;
+  }
+
+}
+
+
+
 
 @font-face {
   font-family: 'Play-Fair-Display-Regular';

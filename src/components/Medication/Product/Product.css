@@ -50,3 +50,13 @@
     left: 93%;
   }
 }
+
+@media (max-width: 358px) {
+  .ProducImage-Img {
+    max-width: 100%;
+    position: absolute;
+    left: 88%;
+  }
+
+}
+

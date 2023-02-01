@@ -9,3 +9,12 @@
   align-items: center;
   margin-top: 35px;
 }
+
+
+@media (max-width: 1197px) {
+  .BabyCalculator-Inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

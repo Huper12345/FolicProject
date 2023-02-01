@@ -21,6 +21,19 @@
     background-color: brown;
 }
 
+/* link */
+
+.TextButton.Link {
+    height: 55px;
+    font-size: 23px;
+    text-decoration: none;
+  }
+  
+  .TextButton.Link:hover {
+    background-color: brown;
+  }
+  
+
 
 @font-face {
     font-family: 'Play-Fair-Display-Regular';
@@ -28,3 +41,27 @@
     font-style: normal;
     src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
   }
+
+  @media (max-width: 522px) {
+    .TextButton {
+        max-width: 150px;
+        height: 45px;
+        font-size: 17px;
+        margin: 0;
+      
+    }
+
+    .TextButton.Link {
+        max-width: 150px;
+        height: 45px;
+        font-size: 17px;
+        margin: 0;
+    }
+  }
+
+
+  @media (max-width: 435px) {
+    .TextButton.Link {
+        margin-top: 25px;
+    }
+    }

@@ -96,7 +96,7 @@
   }
 
   .SlideItem-Icon {
-    width: 33px;
+    display: none;
   }
 
   .Slide-Title-Box {
@@ -112,14 +112,27 @@
 @media (max-width: 412px) {
   .SlideItem-Subtext {
     max-width: 300px;
+    font-size: 14px;
+  }
+
+  .SlideItem-Title {
     font-size: 15px;
+  }
+
+  .SlideItem-IMG {
+    max-width: 215px;
+    max-height: 175px;
+  }
+
+  .SlideItem-Icon {
+    width: 26px;
   }
 }
 
 @media (max-width: 310px) {
   .SlideItem-Subtext {
     max-width: 270px;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .Slide-Title-Box {

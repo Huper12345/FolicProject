@@ -44,8 +44,14 @@
   }
 }
 
-@media (max-width: 989px) {
+@media (max-width: 988px) {
   .Intro-Background {
     display: none;
   }
+
+  .Intro-Inner {
+    justify-content: center;
+  }
+
+  
 }
