@@ -66,9 +66,11 @@ export const FooterNav = () => {
         Часто задаваемые вопросы
       </Link>
 
-      <a href="https://tabletka.by/result?ls=21024" target="blank" className="Footer-Nav-Link">
-        Где купить?
-      </a>
+      <a
+        href="https://www.rceth.by/NDfiles/instr/23_01_3103_s.pdf"
+        target="blank"
+        className="TextButton Footer"
+      >
     </nav>
   );
 };
