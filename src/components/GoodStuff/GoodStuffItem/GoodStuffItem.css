@@ -169,10 +169,16 @@
   position: absolute;
   top: 0;
   left: 50%;
-  color: var(--marineblue);
+  color: var(--darkpink);
   transform: translateX(-50%);
   opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 130px;
+  height: 22px;
+  border-radius: 20px;
+  display: none;
 }
+
 
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
@@ -223,6 +229,7 @@
     max-width: 100%;
   }
 
+
   .GoodStuff-Item.active {
     display: block;
     max-height: 100%;
@@ -236,6 +243,10 @@
     margin: 0 auto;
     overflow: hidden;
     text-align: justify;
+  }
+
+  .GoodStuff-Click.Mobile {
+    display: block;
   }
 }
 
