@@ -94,19 +94,8 @@
   color: var(--white);
 }
 
-.QuestionButton {
-  border: 0;
-  font-family: 'Play-Fair-Display-Regular';
-  font-weight: 400;
-  font-style: normal;
+.Button.QuestionButton {
   font-size: 17px;
-  text-transform: uppercase;
-  background-color: var(--darkpink);
-  border-radius: 40px;
-  padding: 14px 15px 15px 14px;
-  color: var(--white);
-  transition: 0.2s;
-  cursor: pointer;
   margin-top: 10px;
 }
 

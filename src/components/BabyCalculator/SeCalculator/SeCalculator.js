@@ -2,6 +2,7 @@ import React from 'react';
 import './SeCalculator.css';
 import { useState } from 'react';
 import { RotateImage } from './RotateImage';
+import { Button } from '../../../helpers/Button';
 
 export const SeCalculator = () => {
   const [baby, setBaby] = useState('Результат');
@@ -1068,14 +1069,7 @@ export const SeCalculator = () => {
         className="BabyInput Result"
         type="text"
       ></textarea>
-      <button
-        onClick={changeRotate}
-        form="BabyForm"
-        type="submit"
-        className="BabyButton"
-      >
-        Узнать
-      </button>
+      <Button onClick={changeRotate} text="Узнать" form="BabyForm" className='Button BabyButton' />
     </div>
   );
 };

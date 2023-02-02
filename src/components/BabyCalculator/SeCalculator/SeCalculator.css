@@ -108,23 +108,11 @@
   outline: none;
 }
 
-.BabyButton {
+.Button.BabyButton {
   max-width: 130px;
   height: 42px;
-  background-color: var(--darkpink);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-
   font-size: 17px;
-  font-family: 'Play-Fair-Display-Regular';
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  color: var(--white);
-  text-transform: uppercase;
   padding: 6px 15px 6px 15px;
-  border: 0;
   margin-top: 15px;
 }
 
@@ -143,18 +131,10 @@
   .BabyInput.Result:hover {
     cursor: inherit;
   }
-
-  .BabyButton:hover {
-    background-color: brown;
-  }
 }
 
 @media (max-width: 374px) {
   .BabyInput {
-    font-size: 16px;
-  }
-
-  .BabyButton {
     font-size: 16px;
   }
 

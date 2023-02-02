@@ -1,10 +1,11 @@
-.TextButton {
+.Button {
   max-width: 200px;
   height: 55px;
   background-color: var(--darkpink);
   border-radius: 25px;
   cursor: pointer;
   transition: 0.1s;
+  border: 0;
 
   font-size: 23px;
   font-family: 'Play-Fair-Display-Regular';
@@ -16,12 +17,10 @@
   padding: 13px 15px 13px 15px;
 }
 
-/* link */
-
-.TextButton.Link {
-  height: 55px;
-  font-size: 23px;
-  text-decoration: none;
+@media (min-width: 989px) {
+  .Button:hover {
+    background-color: brown;
+  }
 }
 
 @font-face {
@@ -29,28 +28,4 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-}
-
-@media (min-width: 989px) {
-  .TextButton:hover {
-    background-color: brown;
-  }
-}
-
-@media (max-width: 522px) {
-  .TextButton {
-    max-width: 150px;
-    height: 45px;
-    font-size: 17px;
-  }
-
-  .TextButton.Link {
-    display: none;
-  }
-}
-
-@media (max-width: 519px) {
-  .TextButton.Link {
-    margin-top: 30px;
-  }
 }

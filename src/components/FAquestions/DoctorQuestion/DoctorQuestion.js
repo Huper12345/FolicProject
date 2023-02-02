@@ -3,6 +3,7 @@ import './DoctorQuestion.css';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { Button } from '../../../helpers/Button';
 
 export const DoctorQuestion = () => {
   const [nameText, setNameText] = useState('');
@@ -87,9 +88,8 @@ export const DoctorQuestion = () => {
           onChange={textAreaSelect}
         ></textarea>
       </form>
-      <button form="Question-Form" className="QuestionButton">
-        Отправить
-      </button>
+    
+      <Button text="Отправить" form="Question-Form" className='Button QuestionButton' />
     </div>
   );
 };
