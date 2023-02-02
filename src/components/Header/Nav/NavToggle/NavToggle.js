@@ -33,6 +33,15 @@ export const NavToggle = () => {
             О препарате
           </Link>
 
+          <a
+            href="https://tabletka.by/result?ls=21024"
+            className="Toggle-Menu-Item"
+            target="blank"
+          >
+            {' '}
+            Где купить?
+          </a>
+
           <Link
             onClick={handleOpen}
             to="DoctorQuestion"
@@ -103,14 +112,13 @@ export const NavToggle = () => {
           >
             Информация о производителе
           </Link>
-
           <a
-            href="https://tabletka.by/result?ls=21024"
+            href="https://www.rceth.by/NDfiles/instr/23_01_3103_s.pdf"
             className="Toggle-Menu-Item"
             target="blank"
           >
             {' '}
-            Где купить?
+            Открыть инструкцию
           </a>
         </ul>
       ) : null}
