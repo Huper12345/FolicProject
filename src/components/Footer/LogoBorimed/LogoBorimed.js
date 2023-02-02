@@ -1,6 +1,6 @@
 import React from "react"
 import "./LogoBorimed.css";
-import LogoT from "../../../helpers/assets/Images/logo.png"
+
 
 export const LogoBorimed = () => {
   return (

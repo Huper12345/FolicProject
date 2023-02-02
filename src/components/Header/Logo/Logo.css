@@ -1,12 +1,12 @@
 .Logo-Img {
   display: block;
-  max-width: 90%;
+  max-width: 150px;
   height: auto;
   cursor: pointer;
 }
 
 @media (max-width: 500px) {
   .Logo-Img {
-    max-width: 63%;
+    max-width: 110px;
   }
 }

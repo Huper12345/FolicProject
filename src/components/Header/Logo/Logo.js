@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.css';
-import LogoT from '../../../helpers/assets/Images/logo.png';
+import LogoT from '../../../helpers/assets/Images/Logo/MainLogoOpt.webp';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Logo = () => {
@@ -14,7 +14,7 @@ export const Logo = () => {
         duration={600}
       >
         <img
-          src="https://i.ibb.co/kHJ8znT/logo.png"
+          src={LogoT}
           alt="Logo"
           className="Logo-Img"
         ></img>
