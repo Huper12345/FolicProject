@@ -49,7 +49,7 @@ export const Carousel = ({
   return (
     <div className="Sub-container">
       <FaChevronLeft className={arrowL} onClick={handleLeftArrowClick} />
-      <div className="Main-container">
+      <div  className="Main-container">
         <div className="Window">
           <div
             className="All-pages-container"

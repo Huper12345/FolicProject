@@ -1,7 +1,10 @@
 .Nav {
-  position: relative;
   width: 585px;
   padding-bottom: 23px;
+}
+
+.NavDrop-Container {
+  position: relative;
 }
 
 .Nav-Link {
@@ -14,8 +17,12 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.1s;
-  position: absolute;
   padding: 0 5px;
+}
+
+.Nav-Link.Desktop {
+  position: absolute;
+  right: 0;
 }
 
 .Nav-Link:hover {
@@ -30,10 +37,6 @@
   left: 0;
 }
 
-.Nav-Link {
-  right: 0;
-}
-
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -41,10 +44,8 @@
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
 
-
 @media (max-width: 988px) {
-  .Nav {
-   display: none;
+  .NavDrop-Container {
+    display: none;
   }
-
 }

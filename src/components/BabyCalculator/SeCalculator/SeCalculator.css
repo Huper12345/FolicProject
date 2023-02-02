@@ -77,10 +77,6 @@
   cursor: pointer;
 }
 
-.BabyInput.WomanAge:hover {
-  background-color: var(--darkpink);
-}
-
 ::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
@@ -112,10 +108,6 @@
   outline: none;
 }
 
-.BabyInput.Result:hover {
-  cursor: inherit;
-}
-
 .BabyButton {
   max-width: 130px;
   height: 42px;
@@ -136,10 +128,6 @@
   margin-top: 15px;
 }
 
-.BabyButton:hover {
-  background-color: brown;
-}
-
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -147,10 +135,21 @@
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
 
+@media (min-width: 989px) {
+  .BabyInput.WomanAge:hover {
+    background-color: var(--darkpink);
+  }
 
+  .BabyInput.Result:hover {
+    cursor: inherit;
+  }
+
+  .BabyButton:hover {
+    background-color: brown;
+  }
+}
 
 @media (max-width: 374px) {
-  
   .BabyInput {
     font-size: 16px;
   }

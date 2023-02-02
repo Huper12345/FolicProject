@@ -12,6 +12,7 @@ export const FAquestions = () => {
         <div className="FAquestions">
           < Title text="Часто задаваемые" subtext="вопросы"/>
           <div className="FAquestion-content">
+            
             <div className="FAquestions-Questions">
                 <Advantages 
                 buttonText="Что такое фолиевая кислота?" 

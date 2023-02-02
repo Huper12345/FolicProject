@@ -8,15 +8,16 @@
   flex: none;
 }
 
-.Advantages-Button:hover .Plus-Icon {
-  fill: var(--marineblue);
-}
-
 .Plus-Icon.active {
   fill: var(--marineblue);
   transform: rotate(45deg);
 }
 
+@media (min-width: 989px) {
+  .Advantages-Button:hover .Plus-Icon {
+    fill: var(--marineblue);
+  }
+}
 
 @media (max-width: 609px) {
   .Plus-Icon {

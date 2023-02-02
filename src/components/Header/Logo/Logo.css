@@ -4,3 +4,9 @@
   height: auto;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .Logo-Img {
+    max-width: 63%;
+  }
+}

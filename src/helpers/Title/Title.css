@@ -1,38 +1,31 @@
 .Title-Container {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .Title-Text {
-    font-family: 'Play-Fair-Display-Bold';
-    font-weight: 700;
-    font-style: normal;
-    color: var(--middlegray);
-    text-transform: uppercase;
-    user-select: none;
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  color: var(--middlegray);
+  text-transform: uppercase;
+  user-select: none;
 }
 
 .Title-Subtext {
-    color: var(--darkpink);
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.1s;
-}
-
-.Title-Subtext:hover {
-    color: var(--brown);
+  color: var(--darkpink);
+  text-decoration: none;
+  transition: 0.1s;
 }
 
 @media (max-width: 553px) {
-    .Title-Text {
-        font-size: 19px;
-    }
+  .Title-Text {
+    font-size: 19px;
   }
-
-
+}
 
 @font-face {
-    font-family: 'Play-Fair-Display-Bold';
-    font-weight: 700;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
-  }
+  font-family: 'Play-Fair-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+}

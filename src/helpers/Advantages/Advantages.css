@@ -15,11 +15,6 @@
   user-select: none;
 }
 
-.Advantages-Button:hover {
-  color: var(--brown);
-  transition: 0.1s;
-}
-
 .Advantages-Button.active {
   color: var(--brown);
 }
@@ -48,6 +43,13 @@
   margin-top: 10px;
 }
 
+@media (min-width: 989px) {
+  .Advantages-Button:hover {
+    color: var(--brown);
+    transition: 0.1s;
+  }
+}
+
 @media (max-width: 989px) {
   .Advantages-Box {
     position: static;
@@ -71,9 +73,7 @@
   .Dropdown-Menu {
     max-width: 100%;
   }
-
 }
-
 
 @media (max-width: 609px) {
   .Advantages-Button {
@@ -103,11 +103,10 @@
   .Advantages-Box {
     margin-top: 200px;
   }
-
 }
 
 @media (max-width: 466px) {
-  .Advantages-Box{
+  .Advantages-Box {
     margin-top: 150px;
   }
 
@@ -121,7 +120,7 @@
     font-size: 16px;
   }
 
-  .Advantages-Box{
+  .Advantages-Box {
     margin-top: 120px;
   }
 
@@ -133,8 +132,6 @@
     display: flex;
     padding: 1px 25px 5px 42px;
   }
-
-
 }
 
 @media (max-width: 323px) {
@@ -148,11 +145,7 @@
     padding: 1px 25px 5px 0px;
     margin: 0 25px 0 30px;
   }
-
 }
-
-
-
 
 @font-face {
   font-family: 'Play-Fair-Display-Regular';

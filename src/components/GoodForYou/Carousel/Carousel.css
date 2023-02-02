@@ -41,16 +41,18 @@
   z-index: 1000;
 }
 
-.Arrow:hover {
-  color: var(--marineblue);
-}
-
 .Arrow.Left {
   left: 0;
 }
 
 .Arrow.Right {
   right: 0;
+}
+
+@media (min-width: 988px) {
+  .Arrow:hover {
+    color: var(--marineblue);
+  }
 }
 
 @media (max-width: 930px) {
@@ -80,12 +82,14 @@
 
   .Arrow.Left {
     left: 30%;
-    bottom: -7%;
   }
 
   .Arrow.Right {
     right: 30%;
-    bottom: -7%;
+  }
+
+  .Arrow {
+    bottom: -17px;
   }
 }
 

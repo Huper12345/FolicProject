@@ -1,0 +1,93 @@
+.Nav-Toggle-Container {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  width: 100%;
+  display: none;
+}
+
+.Toggle-Button-Container {
+  position: absolute;
+  right: 35px;
+}
+
+.Nav-Toggle-Button.active {
+  background: none;
+}
+
+.Nav-Toggle-Button.active::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.Nav-Toggle-Button.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.Nav-Toggle-Button {
+  cursor: pointer;
+
+  max-width: 100%;
+  user-select: none;
+  position: relative;
+  border: 0;
+  font-size: 0;
+  color: inherit;
+  background-color: var(--marineblue);
+  width: 33px;
+  height: 3px;
+}
+
+.Nav-Toggle-Button::after {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 3px;
+  bottom: 10px;
+  right: 0;
+  position: absolute;
+  background-color: var(--marineblue);
+}
+
+.Nav-Toggle-Button::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 3px;
+  top: 10px;
+  right: 0;
+  position: absolute;
+  background-color: var(--marineblue);
+}
+
+.Nav-Toggle-Button.active {
+  color: var(--brown);
+}
+
+.Toggle-Menu {
+  font-family: 'Play-Fair-Display-Regular';
+  display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  user-select: none;
+  background-color: var(--white);
+  padding: 20px 20px;
+  height: 100%;
+  text-align: left;
+}
+
+.Toggle-Menu-Item {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: var(--darkpink);
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+
+@media (max-width: 988px) {
+  .Nav-Toggle-Container {
+    display: block;
+  }
+}
