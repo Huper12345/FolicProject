@@ -85,6 +85,13 @@
   }
 }
 
+@media (max-width: 561px) {
+  .SlideItem-IMG {
+    max-width: 250px;
+    max-height: 210px;
+  }
+}
+
 @media (max-width: 518px) {
   .SlideItem-Subtext {
     max-width: 400px;

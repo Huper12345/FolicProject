@@ -82,12 +82,14 @@
 
   .Arrow.Left {
     left: 30%;
-    bottom: -7%;
   }
 
   .Arrow.Right {
     right: 30%;
-    bottom: -7%;
+  }
+
+  .Arrow {
+    bottom: -17px;
   }
 }
 
