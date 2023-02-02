@@ -165,6 +165,15 @@
   transition: 0.5s;
 }
 
+.GoodStuff-Click.Mobile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: var(--marineblue);
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;

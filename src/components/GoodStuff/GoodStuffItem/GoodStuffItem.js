@@ -54,6 +54,7 @@ export const GoodStuffItem = ({
             <div className="GoodStuff-Click">Подробнее</div>
           </div>
         </div>
+        <div className="GoodStuff-Click Mobile">Подробнее </div>
       </div>
       {open ? (
         <ul className="Stuff-Menu">
@@ -83,7 +84,14 @@ export const GoodStuffItem = ({
               </p>
               <p className="Stuff-Text-P">
                 <span className="Stuff-Drop-Title">{dropTitle7}</span>
-                {dropText7}<a href='https://son-by.by/' target="blank" className='Stuff-Drop-Link'>{dropLink7}</a>
+                {dropText7}
+                <a
+                  href="https://son-by.by/"
+                  target="blank"
+                  className="Stuff-Drop-Link"
+                >
+                  {dropLink7}
+                </a>
               </p>
               <p className="Stuff-Text-P">
                 <span className="Stuff-Drop-Title">{dropTitle8}</span>
