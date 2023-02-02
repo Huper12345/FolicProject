@@ -23,6 +23,7 @@ export const NavToggle = () => {
       {open ? (
         <ul className="Toggle-Menu">
           <Link
+            onClick={handleOpen}
             to="Medication"
             smooth={true}
             offset={-70}
@@ -33,6 +34,7 @@ export const NavToggle = () => {
           </Link>
 
           <Link
+            onClick={handleOpen}
             to="DoctorQuestion"
             spy={true}
             smooth={true}
@@ -44,6 +46,7 @@ export const NavToggle = () => {
           </Link>
 
           <Link
+            onClick={handleOpen}
             to="GoodForYou"
             spy={true}
             smooth={true}
@@ -54,6 +57,7 @@ export const NavToggle = () => {
             Полезные советы беременным
           </Link>
           <Link
+            onClick={handleOpen}
             to="BabyCalculator"
             spy={true}
             smooth={true}
@@ -65,6 +69,7 @@ export const NavToggle = () => {
           </Link>
 
           <Link
+            onClick={handleOpen}
             to="GoodStuff"
             spy={true}
             smooth={true}
@@ -76,6 +81,7 @@ export const NavToggle = () => {
           </Link>
 
           <Link
+            onClick={handleOpen}
             to="FAquestions"
             spy={true}
             smooth={true}
@@ -87,7 +93,8 @@ export const NavToggle = () => {
           </Link>
 
           <Link
-            to="FAquestions"
+            onClick={handleOpen}
+            to="Contacts"
             spy={true}
             smooth={true}
             offset={-70}
@@ -96,6 +103,15 @@ export const NavToggle = () => {
           >
             Информация о производителе
           </Link>
+
+          <a
+            href="https://tabletka.by/result?ls=21024"
+            className="Toggle-Menu-Item"
+            target="blank"
+          >
+            {' '}
+            Где купить?
+          </a>
         </ul>
       ) : null}
     </div>

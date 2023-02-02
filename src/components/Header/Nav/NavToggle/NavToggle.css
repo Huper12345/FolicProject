@@ -3,11 +3,26 @@
   right: 0;
   top: 18px;
   width: 100%;
+  display: none;
 }
 
 .Toggle-Button-Container {
   position: absolute;
   right: 35px;
+}
+
+.Nav-Toggle-Button.active {
+  background: none;
+}
+
+.Nav-Toggle-Button.active::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.Nav-Toggle-Button.active::before {
+  transform: rotate(45deg);
+  top: 0;
 }
 
 .Nav-Toggle-Button {
@@ -53,7 +68,7 @@
 .Toggle-Menu {
   font-family: 'Play-Fair-Display-Regular';
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-direction: column;
   user-select: none;
   background-color: var(--white);
@@ -68,4 +83,11 @@
   font-size: 25px;
   color: var(--darkpink);
   margin-bottom: 22px;
+  text-decoration: none;
+}
+
+@media (max-width: 988px) {
+  .Nav-Toggle-Container {
+    display: block;
+  }
 }

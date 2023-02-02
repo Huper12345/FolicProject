@@ -119,7 +119,7 @@
 @media (max-width: 519px) {
   .Text-Intro-Box {
     width: 400px;
-    height: 350px;
+    height: 280px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -160,7 +160,7 @@
 @media (max-width: 363px) {
   .Text-Intro-Box {
     width: 280px;
-    height: 400px;
+    height: 330px;
   }
 
   .Text-Intro-Dosage {

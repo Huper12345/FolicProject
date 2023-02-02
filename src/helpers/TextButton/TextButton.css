@@ -46,10 +46,7 @@
   }
 
   .TextButton.Link {
-    max-width: 150px;
-    height: 45px;
-    font-size: 17px;
-    margin: 0;
+    display: none;
   }
 }
 
