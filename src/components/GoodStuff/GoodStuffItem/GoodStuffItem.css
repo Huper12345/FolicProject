@@ -64,15 +64,10 @@
   transition: 0.2s;
 }
 
-.Stuff-Drop-Link:hover {
-  color: var(--brown);
-}
-
 .GoodStuff-Item.active {
   max-width: 100%;
   max-height: 600px;
 }
-
 
 .GoodStuff-Item.active .GoodStuff-Inner {
   flex-direction: row;
@@ -92,23 +87,6 @@
 
 .GoodStuff-Item.active .GoodStuff-Click {
   display: none;
-}
-
-
-.GoodStuff-Item:hover .GoodStuff-Image::after {
-  opacity: 0.9;
-}
-
-.GoodStuff-Item:hover .GoodStuff-Text {
-  opacity: 1;
-}
-
-.GoodStuff-Item:hover .GoodStuff-Subtext {
-  opacity: 1;
-}
-
-.GoodStuff-Item:hover .GoodStuff-Click {
-  opacity: 1;
 }
 
 .GoodStuff-Box {
@@ -201,12 +179,34 @@
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
 }
 
+@media (min-width: 989px) {
+  .Stuff-Drop-Link:hover {
+    color: var(--brown);
+  }
+
+  .GoodStuff-Item:hover .GoodStuff-Image::after {
+    opacity: 0.9;
+  }
+
+  .GoodStuff-Item:hover .GoodStuff-Text {
+    opacity: 1;
+  }
+
+  .GoodStuff-Item:hover .GoodStuff-Subtext {
+    opacity: 1;
+  }
+
+  .GoodStuff-Item:hover .GoodStuff-Click {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1152px) {
   .Stuff-Menu {
     max-height: 460px;
     margin-top: 20px;
   }
-  }
+}
 
 @media (max-width: 1000px) {
   .GoodStuff-Item {

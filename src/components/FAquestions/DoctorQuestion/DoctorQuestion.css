@@ -40,25 +40,12 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.Question-Input:hover::placeholder {
-  color: var(--white);
-}
-
 .Question-Input::placeholder {
   color: var(--darkpink);
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-}
-
-.Question-Input:hover {
-  background-color: var(--darkpink);
-  color: var(--white);
-}
-
-.Question-Input:hover {
-  color: var(--white);
 }
 
 .Question-Input:focus {
@@ -97,14 +84,6 @@
   font-size: 20px;
 }
 
-.Question-Message:hover::placeholder {
-  color: var(--white);
-}
-
-.Question-Message:hover {
-  background-color: var(--darkpink);
-}
-
 .Question-Message:focus {
   outline: 0;
   background-color: var(--darkpink);
@@ -131,10 +110,6 @@
   margin-top: 10px;
 }
 
-.QuestionButton:hover {
-  background-color: var(--brown);
-}
-
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -147,6 +122,29 @@
   font-weight: 700;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+}
+
+@media (min-width: 989px) {
+  .Question-Input:hover::placeholder {
+    color: var(--white);
+  }
+
+  .Question-Input:hover {
+    background-color: var(--darkpink);
+    color: var(--white);
+  }
+
+  .Question-Message:hover::placeholder {
+    color: var(--white);
+  }
+
+  .Question-Message:hover {
+    background-color: var(--darkpink);
+  }
+
+  .QuestionButton:hover {
+    background-color: var(--brown);
+  }
 }
 
 @media (max-width: 1089px) {
@@ -184,11 +182,9 @@
     width: 310px;
   }
 
-
   .Question-Message {
     width: 310px;
   }
-
 }
 
 @media (max-width: 320px) {
@@ -196,13 +192,12 @@
     width: 270px;
   }
 
-
   .Question-Message {
     width: 270px;
   }
 
   .Doctor-Question-Title {
-   margin-right: 40px;
+    margin-right: 40px;
   }
 
   .QuestionButton {
@@ -216,8 +211,4 @@
   .Question-Input {
     margin-left: 5px;
   }
-
-
-
-
 }

@@ -18,11 +18,6 @@
   transition: 0.2s;
 }
 
-.Footer-Nav-Link:hover {
-  color: brown;
-  transition: 0.2s;
-}
-
 @font-face {
   font-family: 'Play-Fair-Display-Regular';
   font-weight: 400;
@@ -30,10 +25,15 @@
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }
 
+@media (min-width: 989px) {
+  .Footer-Nav-Link:hover {
+    color: brown;
+    transition: 0.2s;
+  }
+}
 
 @media (max-width: 734px) {
   .Footer-Nav-Link {
     font-size: 17px;
   }
-
 }

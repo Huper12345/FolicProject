@@ -1,5 +1,6 @@
 .Intro {
-  min-height: 400px;
+  min-height: 650px;
+  max-height: 1023px;
   background: linear-gradient(var(--lightpink), var(--middlepink));
   height: 100vh;
 }
@@ -7,7 +8,8 @@
 .Intro-Inner {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 650px;
+  max-height: 1023px;
   display: flex;
   padding-top: 200px;
 }
@@ -15,7 +17,7 @@
 .Intro-Background {
   height: 100%;
   position: absolute;
-  right: -30px;
+  right: -20px;
   top: 0;
   z-index: 2;
 }
@@ -23,6 +25,42 @@
 @media (max-width: 1197px) {
   .Intro-Background {
     right: -60px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 717px) {
+  .Intro-Background {
+    right: -80px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 813px) {
+  .Intro-Background {
+    right: -100px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 849px) {
+  .Intro-Background {
+    right: -130px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 905px) {
+  .Intro-Background {
+    right: -160px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 973px) {
+  .Intro-Background {
+    right: -190px;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1023px) {
+  .Intro-Background {
+    right: -240px;
   }
 }
 
@@ -42,6 +80,14 @@
   .Intro-Background {
     right: -240px;
   }
+
+  .Intro {
+    max-height: 680px;
+  }
+
+  .Intro-Inner {
+    max-height: 680px;
+  }
 }
 
 @media (max-width: 988px) {
@@ -52,6 +98,4 @@
   .Intro-Inner {
     justify-content: center;
   }
-
-  
 }

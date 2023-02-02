@@ -1,67 +1,60 @@
-
 .TextButton {
-    max-width: 200px;
-    height: 55px;
-    background-color: var(--darkpink);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.1s;
-    
-    font-size: 23px;
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: var(--white);
-    text-transform: uppercase;
-    padding: 13px 15px 13px 15px;
-}
+  max-width: 200px;
+  height: 55px;
+  background-color: var(--darkpink);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.1s;
 
-.TextButton:hover {
-    background-color: brown;
+  font-size: 23px;
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 13px 15px 13px 15px;
 }
 
 /* link */
 
 .TextButton.Link {
-    height: 55px;
-    font-size: 23px;
-    text-decoration: none;
-  }
-  
-  .TextButton.Link:hover {
-    background-color: brown;
-  }
-  
-
+  height: 55px;
+  font-size: 23px;
+  text-decoration: none;
+}
 
 @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-family: 'Play-Fair-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+}
+
+@media (min-width: 989px) {
+  .TextButton:hover {
+    background-color: brown;
+  }
+}
+
+@media (max-width: 522px) {
+  .TextButton {
+    max-width: 150px;
+    height: 45px;
+    font-size: 17px;
+    margin: 0;
   }
 
-  @media (max-width: 522px) {
-    .TextButton {
-        max-width: 150px;
-        height: 45px;
-        font-size: 17px;
-        margin: 0;
-      
-    }
-
-    .TextButton.Link {
-        max-width: 150px;
-        height: 45px;
-        font-size: 17px;
-        margin: 0;
-    }
+  .TextButton.Link {
+    max-width: 150px;
+    height: 45px;
+    font-size: 17px;
+    margin: 0;
   }
+}
 
-
-  @media (max-width: 435px) {
-    .TextButton.Link {
-        margin-top: 25px;
-    }
-    }
+@media (max-width: 519px) {
+  .TextButton.Link {
+    margin-top: 30px;
+  }
+}
