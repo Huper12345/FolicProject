@@ -99,3 +99,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 510px) {
+  .Intro-Inner {
+    padding-top: 150px;
+  }
+}

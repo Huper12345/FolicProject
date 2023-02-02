@@ -1,4 +1,3 @@
-
 .Header__inner {
   display: flex;
   padding: 15px 0 15px 0;
@@ -8,7 +7,7 @@
   min-width: 800px;
 }
 
-  .Header {
+.Header {
   background-color: var(--lightpink);
   position: relative;
   top: 0;
@@ -25,5 +24,8 @@
   box-shadow: 0 5px 10px rgba(227, 10, 59, 0.4);
 }
 
-
-
+@media (max-width: 500px) {
+  .Header.is-sticky {
+    height: 73px;
+  }
+}
