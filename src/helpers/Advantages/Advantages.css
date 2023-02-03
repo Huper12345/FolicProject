@@ -2,7 +2,7 @@
   cursor: pointer;
   border: 0;
   background-color: inherit;
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   display: flex;
@@ -29,14 +29,14 @@
 }
 
 .Drop-Menu-Text {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: var(--middlegray);
   text-align: justify;
   user-select: none;
-  max-width: 67%;
+  max-width: 90%;
 }
 
 .Advantages-Menu-Subtext {
@@ -148,7 +148,7 @@
 }
 
 @font-face {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
