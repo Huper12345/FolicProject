@@ -1,11 +1,11 @@
-import React from 'react';
-import './SeCalculator.css';
-import { useState } from 'react';
-import { RotateImage } from './RotateImage';
-import { Button } from '../../../helpers/Button';
+import React from "react";
+import "./SeCalculator.css";
+import { useState } from "react";
+import { RotateImage } from "./RotateImage";
+import { Button } from "../../../helpers/Button";
 
 export const SeCalculator = () => {
-  const [baby, setBaby] = useState('Результат');
+  const [baby, setBaby] = useState("Результат");
   const [age, setAge] = useState(0);
   const [seAge, setSeAge] = useState(0);
   const [classRotate, setClassRotate] = useState(false);
@@ -157,867 +157,867 @@ export const SeCalculator = () => {
     // calcBaby
 
     const calcSeBaby = (getWomanAge, getSeMonth) => {
-      let babyResult = '';
+      let babyResult = "";
 
       if (getWomanAge === 18) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 19) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 20) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 10 && getSeMonth < 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 21) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 22) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 6 && getSeMonth <= 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 23) {
         if (getSeMonth >= 1 && getSeMonth <= 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 9 && getSeMonth <= 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 24) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 3 && getSeMonth <= 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 6 && getSeMonth <= 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 25) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 7 && getSeMonth <= 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 26) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 27) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 5 && getSeMonth <= 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 7 && getSeMonth <= 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 28) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 7 && getSeMonth <= 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 29) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 3 && getSeMonth <= 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 5 && getSeMonth <= 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 8 && getSeMonth <= 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 30) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 31 && getWomanAge === 32) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 33) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 5 && getSeMonth <= 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9 && getSeMonth <= 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 34) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 35) {
         if (getSeMonth >= 1 && getSeMonth <= 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 5 && getSeMonth <= 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 9 && getSeMonth <= 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 36) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 6 && getSeMonth <= 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth > 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 37) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 3 && getSeMonth <= 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 38) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 39) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 3 && getSeMonth <= 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 6 && getSeMonth <= 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth > 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 40) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 6 && getSeMonth <= 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 41) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 7 || getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 42) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8 || getSeMonth === 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 12) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
       }
 
       if (getWomanAge === 43) {
         if (getSeMonth === 1) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 2) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 4) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 5) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 44) {
         if (getSeMonth === 1 || getSeMonth === 2) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 3) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 6) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
         if (getSeMonth >= 11) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge === 45) {
         if (getSeMonth === 1) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 2 && getSeMonth <= 3) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth >= 4 && getSeMonth <= 6) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 7) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 8) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth === 9) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
 
         if (getSeMonth === 10) {
-          babyResult = 'Девочка';
+          babyResult = "Девочка";
         }
 
         if (getSeMonth >= 11 && getSeMonth <= 12) {
-          babyResult = 'Мальчик';
+          babyResult = "Мальчик";
         }
       }
 
       if (getWomanAge >= 46) {
-        babyResult = 'Возраст больше 45';
+        babyResult = "Возраст больше 45";
       }
 
       if (getWomanAge <= 18) {
-        babyResult = 'Возраст меньше 18';
+        babyResult = "Возраст меньше 18";
       }
 
       return babyResult;
@@ -1036,7 +1036,7 @@ export const SeCalculator = () => {
       <div className="Baby-Title-Container">
         <h4 className="Baby-Title">Узнать пол ребенка </h4>
         <RotateImage
-          classRotate={classRotate ? 'Gender-Img Rotate' : 'Gender-Img'}
+          classRotate={classRotate ? "Gender-Img Rotate" : "Gender-Img"}
         />
       </div>
       <form onSubmit={handleSubmit} id="BabyForm" className="BabyForm">
@@ -1069,7 +1069,13 @@ export const SeCalculator = () => {
         className="BabyInput Result"
         type="text"
       ></textarea>
-      <Button onClick={changeRotate} text="Узнать" form="BabyForm" className='Button BabyButton' />
+      <button
+        onClick={changeRotate}
+        form="BabyForm"
+        className="Button BabyButton"
+      >
+        Узнать
+      </button>
     </div>
   );
 };
