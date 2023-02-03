@@ -2,7 +2,7 @@
   cursor: pointer;
   border: 0;
   background-color: inherit;
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   display: flex;
@@ -29,18 +29,26 @@
 }
 
 .Drop-Menu-Text {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: var(--middlegray);
   text-align: justify;
   user-select: none;
-  max-width: 67%;
+  max-width: 90%;
 }
 
 .Advantages-Menu-Subtext {
   margin-top: 10px;
+}
+
+@font-face {
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }
 
 @media (min-width: 989px) {
@@ -145,11 +153,4 @@
     padding: 1px 25px 5px 0px;
     margin: 0 25px 0 30px;
   }
-}
-
-@font-face {
-  font-family: 'Play-Fair-Display-Regular';
-  font-weight: 400;
-  font-style: normal;
-  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }

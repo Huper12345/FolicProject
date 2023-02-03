@@ -1,5 +1,6 @@
-import React from 'react';
-import './SeText.css';
+import React from "react";
+import "./SeText.css";
+import Baby from "../../../helpers/assets/Images/BabyCalculator-pack/babyGirl.webp";
 
 export const SeText = () => {
   return (
@@ -7,7 +8,8 @@ export const SeText = () => {
       <div className="SeImage">
         <img
           className="SeImage-Img"
-          src="https://i.ibb.co/8bSxXxV/babyGirl.jpg"
+          alt="Girlandbaby"
+          src={Baby}
           className="SeImg"
         ></img>
       </div>

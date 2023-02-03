@@ -1,13 +1,10 @@
-import React from "react"
+import React from "react";
 import "./Button.css";
 
-export const Button = ({form, text, className="Button"}) => {
+export const Button = ({ form, text, className = "Button" }) => {
   return (
-        <button 
-        form={form}
-        className={className}>
-          {text}
-        </button>
-
+    <button form={form} className={className}>
+      {text}
+    </button>
   );
 };

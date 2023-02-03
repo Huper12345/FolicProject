@@ -1,47 +1,44 @@
 .Contacts-Container {
-    max-width: 700px;
-    margin-top: 67px;
+  max-width: 700px;
+  margin-top: 67px;
 }
 
 .Contacts-Title {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: var(--white);
-    margin-bottom: 20px;
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 20px;
 }
 
 .Contacts-Subtext {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: var(--white);
-    margin-bottom: 40px;
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 40px;
 }
 
 .TextButton.Footer {
-font-size: 18px;
+  font-size: 18px;
 }
 
-
 @font-face {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
+}
+
+@media (max-width: 734px) {
+  .Contacts-Title {
+    font-size: 16px;
   }
 
-  @media (max-width: 734px) {
-    .Contacts-Title {
-        font-size: 16px;
-    }
-
-    .Contacts-Subtext{
-        font-size: 16px;
-    }
-  
+  .Contacts-Subtext {
+    font-size: 16px;
   }
-  
-  
+}

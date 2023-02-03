@@ -1,13 +1,11 @@
-import React from 'react';
-import './RotateImage.css';
+import React from "react";
+import "./RotateImage.css";
+import RotateImg from "../../../../helpers/assets/Images/BabyCalculator-pack/gender.webp";
 
 export const RotateImage = ({ classRotate }) => {
   return (
     <div className="Gender-Container">
-      <img
-        className={classRotate}
-        src="https://i.ibb.co/ck5Tcf9/gender.png"
-      ></img>
+      <img alt="gender" className={classRotate} src={RotateImg}></img>
     </div>
   );
 };

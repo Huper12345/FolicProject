@@ -1,7 +1,11 @@
-import React from 'react';
-import './GoodStuff.css';
-import { Title } from '../../helpers/Title';
-import { GoodStuffItem } from './GoodStuffItem';
+import React from "react";
+import "./GoodStuff.css";
+import { Title } from "../../helpers/Title";
+import { GoodStuffItem } from "./GoodStuffItem";
+import OneGS from "../../helpers/assets/Images/GoodStuff-pack/OneGS.webp";
+import TwoGS from "../../helpers/assets/Images/GoodStuff-pack/TwoGS.webp";
+import ThirdGS from "../../helpers/assets/Images/GoodStuff-pack/ThirdGS.webp";
+import FourGS from "../../helpers/assets/Images/GoodStuff-pack/FourGS.webp";
 
 export const GoodStuff = () => {
   return (
@@ -72,10 +76,10 @@ export const GoodStuff = () => {
               dropTitle12="Помните! "
               dropText11="Не всегда рацион питания может восполнить дефицит
               фолиевой кислоты, которая необходима Вашему ребенку."
-              Image="https://i.ibb.co/n1j03N7/one.jpg"
+              Image={OneGS}
             />
             <GoodStuffItem
-              Image="https://i.ibb.co/m0tXyKp/good-Stuff2v2.jpg"
+              Image={TwoGS}
               title="Питьевой режим беременной женщины"
               subText="Большинство женщин не пьет достаточно воды, поэтому поставьте перед собой задачу - изменить это во время беременности. Прием жидкости уменьшает тошноту, регулирует температуру тела и увеличивает уровень энергии."
               dropTitle1="Старайтесь выпивать 6–8 стаканов воды в день. "
@@ -85,7 +89,7 @@ export const GoodStuff = () => {
               На отдыхе будьте особенно внимательными по профилактике кишечных инфекций. Для мытья посуды и рук используйте профильтрованную и проваренную воду и обеспечьте запас питьевой воды. Не употребляйте непастеризованные молочные продукты и фруктовые / овощные фреши, смузи, непастеризованные замороженные соки и мороженое."
             />
             <GoodStuffItem
-              Image="https://i.ibb.co/7j1G1b3/folic2.jpg"
+              Image={ThirdGS}
               title="Интересные факты о фолиевой кислоте"
               dropTitle1="Фолат "
               dropText1="впервые был обнаружен учеными в листьях шпината."
@@ -102,7 +106,7 @@ export const GoodStuff = () => {
             />
 
             <GoodStuffItem
-              Image="https://i.ibb.co/JQX854K/godstuff3.jpg"
+              Image={FourGS}
               title="Как должна спать будущая мама?"
               subText="Этот вопрос волнует многих беременных женщин. В данный период организм испытывает повышенные нагрузки, именно полноценный сон является самым эффективным способом восстановления жизненных ресурсов."
               dropTitle1="Во время беременности "

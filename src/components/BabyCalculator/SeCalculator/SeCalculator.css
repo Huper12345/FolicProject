@@ -10,7 +10,7 @@
 }
 
 .Baby-Title {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
@@ -44,7 +44,7 @@
 }
 
 .Woman-Text {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -61,7 +61,7 @@
 }
 
 .BabyInput {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   background-color: var(--lightpink);
@@ -117,10 +117,11 @@
 }
 
 @font-face {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }
 
 @media (min-width: 989px) {

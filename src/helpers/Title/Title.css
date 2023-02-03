@@ -3,7 +3,7 @@
 }
 
 .Title-Text {
-  font-family: 'Play-Fair-Display-Bold';
+  font-family: "Play-Fair-Display-Bold";
   font-weight: 700;
   font-style: normal;
   color: var(--middlegray);
@@ -17,15 +17,18 @@
   transition: 0.1s;
 }
 
+@font-face {
+  font-family: "Play-Fair-Display-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+  font-display: swap;
+}
+
 @media (max-width: 553px) {
   .Title-Text {
     font-size: 19px;
   }
 }
 
-@font-face {
-  font-family: 'Play-Fair-Display-Bold';
-  font-weight: 700;
-  font-style: normal;
-  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
-}
+

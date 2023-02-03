@@ -40,7 +40,7 @@
 }
 
 .Nav-Toggle-Button::after {
-  content: '';
+  content: "";
   display: block;
   width: 33px;
   height: 3px;
@@ -51,7 +51,7 @@
 }
 
 .Nav-Toggle-Button::before {
-  content: '';
+  content: "";
   display: block;
   width: 33px;
   height: 3px;
@@ -66,24 +66,36 @@
 }
 
 .Toggle-Menu {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   display: flex;
-  margin-top: 70px;
+  margin-top: 50px;
   flex-direction: column;
   user-select: none;
   background-color: var(--white);
-  padding: 20px 20px;
+  padding: 10px 10px;
   height: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .Toggle-Menu-Item {
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
+  border: 1px solid var(--darkpink);
+  border-radius: 20px;
+  padding: 3px 10px;
+  text-transform: uppercase;
   color: var(--darkpink);
-  margin-bottom: 22px;
+  margin-bottom: 13px;
   text-decoration: none;
+}
+
+@font-face {
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }
 
 @media (max-width: 988px) {

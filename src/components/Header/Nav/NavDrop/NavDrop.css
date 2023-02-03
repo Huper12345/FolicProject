@@ -8,7 +8,7 @@
 
 .NavDrop-Button {
   font-size: 21px;
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .NavDrop-Button::before {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
@@ -68,11 +68,11 @@
 }
 
 .NavDrop-Link {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   display: block;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--darkpink);
   text-align: left;
   user-select: none;
@@ -89,8 +89,9 @@
 }
 
 @font-face {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }

@@ -7,7 +7,7 @@
   transition: 0.1s;
 
   font-size: 23px;
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
@@ -25,10 +25,11 @@
 }
 
 @font-face {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }
 
 @media (min-width: 989px) {
