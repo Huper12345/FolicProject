@@ -73,7 +73,7 @@ export const NavToggle = () => {
             duration={600}
             className="Toggle-Menu-Item"
           >
-            Материалы для беременных
+            Полезные Материалы для беременных
           </Link>
 
           <Link

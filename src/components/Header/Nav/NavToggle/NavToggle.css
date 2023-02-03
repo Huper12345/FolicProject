@@ -80,7 +80,7 @@
 .Toggle-Menu-Item {
   font-weight: 400;
   font-style: normal;
-  font-size: 22px;
+  font-size: 26px;
   border: 1px solid var(--darkpink);
   border-radius: 20px;
   padding: 3px 10px;
@@ -103,3 +103,26 @@
     display: block;
   }
 }
+
+@media (max-width: 341px) {
+  .Toggle-Menu-Item {
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 328px) {
+  .Toggle-Menu-Item {
+    font-size: 23px;
+  }
+}
+
+
+@media (max-height: 500px) {
+  .Toggle-Menu-Item {
+    font-size: 18px;
+  }
+}
+
+
+
