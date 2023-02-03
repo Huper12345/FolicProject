@@ -14,6 +14,8 @@ export const LogoBorimed = () => {
           src={LogoFooter}
           alt="Logo-Borimed"
           className="Logo-Borimed-Img"
+          height="43px"
+          width="230px"
         ></img>
       </a>
     </div>

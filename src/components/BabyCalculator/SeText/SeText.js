@@ -7,10 +7,11 @@ export const SeText = () => {
     <div className="SeText-Container">
       <div className="SeImage">
         <img
-          className="SeImage-Img"
-          alt="Girlandbaby"
+          alt="PregandGirl"
           src={Baby}
           className="SeImg"
+          width="370px"
+          height="258px"
         ></img>
       </div>
       <div className="SeText-Content">

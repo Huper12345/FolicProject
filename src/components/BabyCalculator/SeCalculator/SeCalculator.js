@@ -1034,7 +1034,7 @@ export const SeCalculator = () => {
   return (
     <div className="Calculator-Container">
       <div className="Baby-Title-Container">
-        <h4 className="Baby-Title">Узнать пол ребенка </h4>
+        <h3 className="Baby-Title">Узнать пол ребенка </h3>
         <RotateImage
           classRotate={classRotate ? "Gender-Img Rotate" : "Gender-Img"}
         />
@@ -1042,25 +1042,27 @@ export const SeCalculator = () => {
       <form onSubmit={handleSubmit} id="BabyForm" className="BabyForm">
         <div className="BabyContainer WomanAge">
           <h4 className="Woman-Text">Возраст матери</h4>
-
           <input
             required
             onChange={ageSelect}
             value={age}
+            id="WomanAge"
             className="BabyInput WomanAge"
             type="date"
+            name="WomanAge"
           ></input>
         </div>
 
         <div className="BabyContainer SeDate">
           <h4 className="Woman-Text SeDate">Дата зачатия</h4>
           <input
-            id="WomanAge"
+            id="SeAge"
             required
             onChange={seAgeSelect}
             value={seAge}
             className="BabyInput"
             type="date"
+            name="SeAge"
           ></input>
         </div>
       </form>
