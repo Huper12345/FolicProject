@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import './NavToggle.css';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import React from "react";
+import { useState } from "react";
+import "./NavToggle.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const NavToggle = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export const NavToggle = () => {
     <div className="Nav-Toggle-Container">
       <div className="Toggle-Button-Container">
         <button
-          className={open ? 'Nav-Toggle-Button active' : 'Nav-Toggle-Button'}
+          className={open ? "Nav-Toggle-Button active" : "Nav-Toggle-Button"}
           onClick={handleOpen}
         >
           1
@@ -38,22 +38,9 @@ export const NavToggle = () => {
             className="Toggle-Menu-Item"
             target="blank"
           >
-            {' '}
+            {" "}
             Где купить?
           </a>
-
-          <Link
-            onClick={handleOpen}
-            to="DoctorQuestion"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={600}
-            className="Toggle-Menu-Item"
-          >
-            Задать вопрос
-          </Link>
-
           <Link
             onClick={handleOpen}
             to="GoodForYou"
@@ -63,7 +50,7 @@ export const NavToggle = () => {
             duration={600}
             className="Toggle-Menu-Item"
           >
-            Полезные советы беременным
+            Советы беременным
           </Link>
           <Link
             onClick={handleOpen}
@@ -86,7 +73,7 @@ export const NavToggle = () => {
             duration={600}
             className="Toggle-Menu-Item"
           >
-            Полезные материалы для беременных
+            Материалы для беременных
           </Link>
 
           <Link
@@ -110,14 +97,14 @@ export const NavToggle = () => {
             duration={600}
             className="Toggle-Menu-Item"
           >
-            Информация о производителе
+            о производителе
           </Link>
           <a
             href="https://www.rceth.by/NDfiles/instr/23_01_3103_s.pdf"
             className="Toggle-Menu-Item"
             target="blank"
           >
-            {' '}
+            {" "}
             Открыть инструкцию
           </a>
         </ul>
