@@ -1,15 +1,12 @@
-import React from 'react';
-import './SeText.css';
+import React from "react";
+import "./SeText.css";
+import Baby from "../../../helpers/assets/Images/BabyCalculator-pack/babyGirl.webp";
 
 export const SeText = () => {
   return (
     <div className="SeText-Container">
       <div className="SeImage">
-        <img
-          className="SeImage-Img"
-          src="https://i.ibb.co/8bSxXxV/babyGirl.jpg"
-          className="SeImg"
-        ></img>
+        <img className="SeImage-Img" src={Baby} className="SeImg"></img>
       </div>
       <div className="SeText-Content">
         Ожидание малыша – это всегда волнительный процесс для будущих родителей.
