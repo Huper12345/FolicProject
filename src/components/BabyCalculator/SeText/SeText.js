@@ -6,7 +6,12 @@ export const SeText = () => {
   return (
     <div className="SeText-Container">
       <div className="SeImage">
-        <img className="SeImage-Img" src={Baby} className="SeImg"></img>
+        <img
+          className="SeImage-Img"
+          alt="Girlandbaby"
+          src={Baby}
+          className="SeImg"
+        ></img>
       </div>
       <div className="SeText-Content">
         Ожидание малыша – это всегда волнительный процесс для будущих родителей.

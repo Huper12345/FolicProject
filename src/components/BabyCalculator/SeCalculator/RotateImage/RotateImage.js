@@ -5,7 +5,7 @@ import RotateImg from "../../../../helpers/assets/Images/BabyCalculator-pack/gen
 export const RotateImage = ({ classRotate }) => {
   return (
     <div className="Gender-Container">
-      <img className={classRotate} src={RotateImg}></img>
+      <img alt="gender" className={classRotate} src={RotateImg}></img>
     </div>
   );
 };
