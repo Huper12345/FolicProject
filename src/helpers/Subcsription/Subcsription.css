@@ -1,92 +1,87 @@
-
 .Subscription-Container {
-    position: relative;
-    z-index: 200;
-    width: 70%;
-    background-color: var(--lightpink2);
-    padding: 10px 30px;
-    border-radius: 10px;
-    margin: 70px auto 20px auto;
+  position: relative;
+  z-index: 200;
+  width: 70%;
+  background-color: var(--lightpink2);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 70px auto 20px auto;
 }
 
 .Subscription-Text {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: var(--white);
-    text-align: justify;
-    user-select: none;
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--white);
+  text-align: justify;
+  user-select: none;
 }
 
 .Subscription-Subtext {
-    font-family: 'Play-Fair-Display-Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: var(--white);
-    text-decoration: none;
-    transition: 0.1s;
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.1s;
 }
 
 .Subscription-Subtext:hover {
-    color: var(--brown);
+  color: var(--brown);
 }
 
 @font-face {
-    font-family: 'Play-Fair-Display-Bold';
-    font-weight: 400;
-    font-style: normal;
-    src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
-  }
+  font-family: "Play-Fair-Display-Bold";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
+}
 
 @media (max-width: 596px) {
-    .Subscription-Text {
-        font-size: 18px;
-        text-align: left;
-    }
+  .Subscription-Text {
+    font-size: 18px;
+    text-align: left;
+  }
 
-    .Subscription-Subtext {
-        font-size: 18px;
-    }
-
+  .Subscription-Subtext {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 526px) {
-    .Subscription-Text {
-        font-size: 16px;
-    }
+  .Subscription-Text {
+    font-size: 16px;
+  }
 
-    .Subscription-Container {
-        margin: 40px auto 20px auto;
-    }
+  .Subscription-Container {
+    margin: 40px auto 20px auto;
+  }
 
-    .Subscription-Subtext {
-        font-size: 16px;
-    }
-
+  .Subscription-Subtext {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 417px) {
-    .Subscription-Text {
-        font-size: 14px;
-    }
+  .Subscription-Text {
+    font-size: 14px;
+  }
 
-    .Subscription-Subtext {
-        font-size: 15px;
-    }
-
+  .Subscription-Subtext {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 374px) {
-    .Subscription-Text {
-        font-size: 13px;
-        text-align: left;
-    }
+  .Subscription-Text {
+    font-size: 13px;
+    text-align: left;
+  }
 
-    .Subscription-Subtext {
-        font-size: 14px;
-    }
-
-
+  .Subscription-Subtext {
+    font-size: 14px;
+  }
 }

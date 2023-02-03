@@ -43,6 +43,14 @@
   margin-top: 10px;
 }
 
+@font-face {
+  font-family: "Play-Fair-Display-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
+}
+
 @media (min-width: 989px) {
   .Advantages-Button:hover {
     color: var(--brown);
@@ -145,11 +153,4 @@
     padding: 1px 25px 5px 0px;
     margin: 0 25px 0 30px;
   }
-}
-
-@font-face {
-  font-family: "Play-Fair-Display-Regular";
-  font-weight: 400;
-  font-style: normal;
-  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
 }

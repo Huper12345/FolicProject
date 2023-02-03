@@ -9,7 +9,7 @@
 
 .Nav-Link {
   font-size: 21px;
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -38,10 +38,11 @@
 }
 
 @font-face {
-  font-family: 'Play-Fair-Display-Regular';
+  font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff);
+  font-display: swap;
 }
 
 @media (max-width: 988px) {
