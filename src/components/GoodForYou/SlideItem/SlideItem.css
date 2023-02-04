@@ -45,8 +45,10 @@
 }
 
 .SlideItem-IMG {
+  width: auto;
   max-width: 300px;
   margin-bottom: 15px;
+  height: auto;
   max-height: 260px;
 }
 

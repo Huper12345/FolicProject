@@ -1,6 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-import './GoodStuffItem.css';
+import React from "react";
+import { useState } from "react";
+import "./GoodStuffItem.css";
 
 export const GoodStuffItem = ({
   title,
@@ -39,17 +39,23 @@ export const GoodStuffItem = ({
   return (
     <div
       id="GoodStuff"
-      className={open ? 'GoodStuff-Item active' : 'GoodStuff-Item'}
+      className={open ? "GoodStuff-Item active" : "GoodStuff-Item"}
       onClick={handleOpen}
     >
       <div className="GoodStuff-Content">
         <div className="GoodStuff-Image">
-          <img src={Image} alt="" className="GoodStuff-Img"></img>
+          <img
+            src={Image}
+            width="640px"
+            height="593px"
+            alt="Good"
+            className="GoodStuff-Img"
+          ></img>
         </div>
 
         <div className="GoodStuff-Box">
           <div className="GoodStuff-Box-Inner">
-            <h4 className="GoodStuff-Text">{title}</h4>
+            <h3 className="GoodStuff-Text">{title}</h3>
             <div className="GoodStuff-Subtext">{subText}</div>
             <div className="GoodStuff-Click">Подробнее</div>
           </div>
