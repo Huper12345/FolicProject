@@ -55,7 +55,7 @@ export const GoodStuffItem = ({
 
         <div className="GoodStuff-Box">
           <div className="GoodStuff-Box-Inner">
-            <h4 className="GoodStuff-Text">{title}</h4>
+            <h3 className="GoodStuff-Text">{title}</h3>
             <div className="GoodStuff-Subtext">{subText}</div>
             <div className="GoodStuff-Click">Подробнее</div>
           </div>
