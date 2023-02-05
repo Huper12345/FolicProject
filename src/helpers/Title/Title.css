@@ -21,7 +21,8 @@
   font-family: "Play-Fair-Display-Bold";
   font-weight: 700;
   font-style: normal;
-  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff);
+  src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff)
+       url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff2);
   font-display: swap;
 }
 
