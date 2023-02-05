@@ -42,12 +42,12 @@
   padding: 8px 13px 8px 13px;
   border-radius: 10px;
   background-color: var(--white);
+  margin-top: 5%;
 }
 
 .SlideItem-IMG {
   width: auto;
   max-width: 300px;
-  margin-bottom: 15px;
   height: auto;
   max-height: 260px;
 }
@@ -93,6 +93,10 @@
   .SlideItem-IMG {
     max-width: 250px;
     max-height: 210px;
+  }
+
+  .SlideItem-Subtext {
+    margin-top: 0;
   }
 }
 
