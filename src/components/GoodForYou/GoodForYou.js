@@ -12,7 +12,6 @@ import Slide6 from "../../helpers/assets/Images/GoodForYou-Pack/slide6.webp";
 import Slide7 from "../../helpers/assets/Images/GoodForYou-Pack/slide7.webp";
 import Slide8 from "../../helpers/assets/Images/GoodForYou-Pack/slide8.webp";
 import Slide9 from "../../helpers/assets/Images/GoodForYou-Pack/slide9.webp";
-import Slide2P from "../../helpers/assets/Images/GoodForYou-Pack/placeholder/slide2P.webp"
 
 export const GoodForYou = () => {
   return (
@@ -28,7 +27,6 @@ export const GoodForYou = () => {
               alt="pregantWoman"
               height="200px"
               width="83px"
-              PImage={Slide2P}
             />
 
             <SlideItem
