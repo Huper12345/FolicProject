@@ -8,20 +8,25 @@ import { BabyCalculator } from '../../components/BabyCalculator';
 import { GoodStuff } from '../../components/GoodStuff';
 import { FAquestions } from '../../components/FAquestions';
 import { Footer } from '../../components/Footer';
+import LazyHydrate from "react-lazy-hydration";
 
-export const Home = (props) => {
+export const Home = () => {
   
 
   return (
     <div className="Home">
-      <Header  />
-      <Intro  />
-      <Medication />
-      <GoodForYou />
-      <BabyCalculator />
-      <GoodStuff />
-      <FAquestions />
-      <Footer />
+      <LazyHydrate whenIdle>
+        <Header  />
+        <Intro  />
+        <Medication />
+      </LazyHydrate>
+      <LazyHydrate whenVisible>
+        <GoodForYou />
+        <BabyCalculator />
+        <GoodStuff />
+        <FAquestions />
+        <Footer />
+      </LazyHydrate>
     </div>
   );
 };

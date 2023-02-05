@@ -10,7 +10,7 @@ export const SlideItem = ({
   height = "260px",
   width = "300px",
   alt = "",
-  PImage,
+  PImage="",
 }) => {
   return (
     <div className="SlideItem-Box">
@@ -30,7 +30,7 @@ export const SlideItem = ({
         width={width}
         alt={alt}
         placeholderSrc={PImage}
-        effect="blur"
+        effect = "opacity"
         className="SlideItem-IMG"
       />
       <div className="SlideItem-Subtext">{subtext}</div>
