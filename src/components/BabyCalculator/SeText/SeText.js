@@ -1,20 +1,18 @@
 import React from "react";
 import "./SeText.css";
 import Baby from "../../../helpers/assets/Images/BabyCalculator-pack/babyGirl.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const SeText = () => {
   return (
     <div className="SeText-Container">
       <div className="SeImage">
-        <LazyLoadImage
+        <img
           alt="PregandGirl"
           src={Baby}
           className="SeImg"
           width="370px"
           height="258px"
-          effect="blur"
-        />
+        ></img>
       </div>
       <div className="SeText-Content">
         Ожидание малыша – это всегда волнительный процесс для будущих родителей.
