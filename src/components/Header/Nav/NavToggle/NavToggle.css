@@ -81,13 +81,24 @@
   font-weight: 400;
   font-style: normal;
   font-size: 26px;
-  border: 1px solid var(--darkpink);
-  border-radius: 20px;
-  padding: 3px 10px;
+  text-align: left;
+  padding: 3px 20px;
   text-transform: uppercase;
   color: var(--darkpink);
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   text-decoration: none;
+  position: relative;
+}
+
+.Toggle-Menu-Item::before {
+  content: "";
+  display: block;
+  height: 70%;
+  width: 1px;
+  background-color: var(--darkpink);
+  position: absolute;
+  left: 1.5%;
+  bottom: 11%;
 }
 
 @font-face {
@@ -95,7 +106,7 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
   font-display: swap;
 }
 
@@ -111,19 +122,14 @@
   }
 }
 
-
 @media (max-width: 328px) {
   .Toggle-Menu-Item {
     font-size: 23px;
   }
 }
 
-
 @media (max-height: 500px) {
   .Toggle-Menu-Item {
     font-size: 18px;
   }
 }
-
-
-

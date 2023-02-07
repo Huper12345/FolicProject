@@ -53,7 +53,7 @@
   font-weight: 700;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff2);
   font-display: swap;
 }
 
@@ -62,7 +62,7 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
   font-display: swap;
 }
 
@@ -132,6 +132,7 @@
 
   .Text-Intro {
     font-size: 28px;
+    margin-bottom: 13px;
   }
 
   .Button-Box {
@@ -158,6 +159,7 @@
 @media (max-width: 384px) {
   .Text-Intro-Box {
     width: 320px;
+    height: 330px;
   }
 }
 

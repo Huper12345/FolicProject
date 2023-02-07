@@ -1,6 +1,6 @@
-import React from 'react';
-import './TextBlock.css';
-import { TextButton } from '../../../helpers/TextButton';
+import React from "react";
+import "./TextBlock.css";
+import { TextButton } from "../../../helpers/TextButton";
 
 export const TextBlock = () => {
   return (
