@@ -104,4 +104,14 @@
   .Intro-Inner {
     padding-top: 150px;
   }
+
+  .Intro {
+    min-height: 300px;
+  }
+}
+
+@media (max-height: 470px) {
+  .Intro-Inner {
+    padding-top: 100px;
+  }
 }

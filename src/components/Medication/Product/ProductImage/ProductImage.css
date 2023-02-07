@@ -19,6 +19,7 @@
   }
 
   .ProducImage-Img {
-    max-width: 100%;
+    max-width: 800px;
+    width: 100%;
   }
 }

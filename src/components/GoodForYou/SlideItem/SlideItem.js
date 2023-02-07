@@ -1,6 +1,5 @@
 import React from "react";
 import "./SlideItem.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const SlideItem = ({
   title,
@@ -10,7 +9,6 @@ export const SlideItem = ({
   height = "260px",
   width = "300px",
   alt = "",
-  PImage="",
 }) => {
   return (
     <div className="SlideItem-Box">
@@ -24,15 +22,13 @@ export const SlideItem = ({
         ></img>
         <h3 className="SlideItem-Title">{title}</h3>
       </div>
-      <LazyLoadImage
+      <img
         src={src}
         height={height}
         width={width}
         alt={alt}
-        placeholderSrc={PImage}
-        effect = "opacity"
         className="SlideItem-IMG"
-      />
+      ></img>
       <div className="SlideItem-Subtext">{subtext}</div>
     </div>
   );
