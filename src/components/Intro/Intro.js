@@ -11,12 +11,12 @@ export const Intro = () => {
       <div className="container">
         <div className="Intro-Inner">
           <TextBlock />
-          <LazyLoadImage 
-          className="Intro-Background" 
-          alt="Girl" 
-          src={Girl}
-          placeholderSrc={GirlP}
-          effect="blur"
+          <LazyLoadImage
+            className="Intro-Background"
+            alt="Girl"
+            src={Girl}
+            placeholderSrc={GirlP}
+            effect="blur"
           />
         </div>
       </div>

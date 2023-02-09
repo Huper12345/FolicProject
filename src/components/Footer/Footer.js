@@ -1,8 +1,8 @@
-import React from 'react';
-import './Footer.scss';
-import { FooterNav } from './FooterNav';
-import { LogoBorimed } from './LogoBorimed';
-import { Contacts } from './Contacts';
+import React from "react";
+import "./Footer.scss";
+import { FooterNav } from "./FooterNav";
+import { LogoBorimed } from "./LogoBorimed";
+import { Contacts } from "./Contacts";
 
 export const Footer = () => {
   return (

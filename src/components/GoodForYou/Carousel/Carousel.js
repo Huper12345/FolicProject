@@ -1,15 +1,15 @@
-import React from 'react';
-import { cloneElement } from 'react';
-import { useEffect, useState, Children } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import './Carousel.css';
+import React from "react";
+import { cloneElement } from "react";
+import { useEffect, useState, Children } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "./Carousel.css";
 
 const PAGE_WIDTH = 100;
 
 export const Carousel = ({
   children,
-  arrowL = 'Arrow Left',
-  arrowR = 'Arrow Right',
+  arrowL = "Arrow Left",
+  arrowR = "Arrow Right",
 }) => {
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
@@ -37,7 +37,7 @@ export const Carousel = ({
       Children.map(children, (child) => {
         return cloneElement(child, {
           style: {
-            height: '100%',
+            height: "100%",
             maxWidth: `${PAGE_WIDTH}%`,
             minWidth: `${PAGE_WIDTH}%`,
           },
@@ -49,7 +49,7 @@ export const Carousel = ({
   return (
     <div className="Sub-container">
       <FaChevronLeft className={arrowL} onClick={handleLeftArrowClick} />
-      <div  className="Main-container">
+      <div className="Main-container">
         <div className="Window">
           <div
             className="All-pages-container"

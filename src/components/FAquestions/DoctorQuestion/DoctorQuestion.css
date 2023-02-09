@@ -104,7 +104,7 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
   font-display: swap;
 }
 
@@ -113,7 +113,7 @@
   font-weight: 700;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Bold.woff2);
   font-display: swap;
 }
 
