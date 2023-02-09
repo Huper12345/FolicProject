@@ -6,17 +6,11 @@
   --lightpink: #ee6883;
   --darkpink: #e30a3b;
   --middlepink: #e95f7d;
-  --liggtwgite: rgb(1, 1, 1, 0.5);
   --lightblack: #2a2a2a;
   --marineblue: #018a9d;
   --brown: brown;
   --lightpink2: #ee6382;
   --darkblue: #021056;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(168, 224, 11);
-  border-radius: 10px;
 }
 
 * {
@@ -46,17 +40,19 @@ h6 {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+// ScrollBar
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -71,4 +67,10 @@ code {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: linear-gradient(180deg, var(--lightpink), var(--darkpink));
+}
+
+html,
+body {
+  scrollbar-color: var(--darkpink) var(--white); /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
 }
