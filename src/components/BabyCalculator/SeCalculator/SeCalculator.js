@@ -154,7 +154,7 @@ export const SeCalculator = () => {
 
     const getSeMonth = calcSeMonth(seMonth);
 
-    // calcBaby
+    // calcBabyGender
 
     const calcSeBaby = (getWomanAge, getSeMonth) => {
       let babyResult = "";
@@ -509,7 +509,7 @@ export const SeCalculator = () => {
         }
       }
 
-      if (getWomanAge === 31 && getWomanAge === 32) {
+      if (getWomanAge === 31 || getWomanAge === 32) {
         if (getSeMonth === 1) {
           babyResult = "Мальчик";
         }
@@ -1019,7 +1019,6 @@ export const SeCalculator = () => {
       if (getWomanAge <= 18) {
         babyResult = "Возраст меньше 18";
       }
-
       return babyResult;
     };
 

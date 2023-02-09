@@ -1,14 +1,14 @@
-import React from 'react';
-import './DoctorQuestion.css';
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
-import { Button } from '../../../helpers/Button';
+import React from "react";
+import "./DoctorQuestion.css";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { Button } from "../../../helpers/Button";
 
 export const DoctorQuestion = () => {
-  const [nameText, setNameText] = useState('');
-  const [emailText, setEmailText] = useState('');
-  const [textAreaText, setTextArea] = useState('');
+  const [nameText, setNameText] = useState("");
+  const [emailText, setEmailText] = useState("");
+  const [textAreaText, setTextArea] = useState("");
 
   const form = useRef();
 
@@ -28,32 +28,32 @@ export const DoctorQuestion = () => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
     emailjs
       .sendForm(
-        'service_x6kt42c',
-        'template_q9iaa2a',
+        "service_x6kt42c",
+        "template_q9iaa2a",
         form.current,
-        'FKDMCs7z1Y7TOoCpl'
+        "FKDMCs7z1Y7TOoCpl"
       )
       .then(
         (result) => {
-          setTextArea('Успешно отправлено');
+          setTextArea("Успешно отправлено");
           setTimeout(() => {
-            setTextArea('');
+            setTextArea("");
           }, 4000);
         },
         (error) => {
-          setTextArea('Что-то пошло не так...');
+          setTextArea("Что-то пошло не так...");
           setTimeout(() => {
-            setTextArea('');
+            setTextArea("");
           }, 4000);
         }
       );
 
-    setNameText('');
-    setEmailText('');
+    setNameText("");
+    setEmailText("");
   };
 
   return (
-    <div className="DoctorQuestion-Container" id='DoctorQuestion'>
+    <div className="DoctorQuestion-Container" id="DoctorQuestion">
       <h2 className="Doctor-Question-Title"> Вопрос врачу</h2>
       <form
         onSubmit={sendEmail}
@@ -88,8 +88,12 @@ export const DoctorQuestion = () => {
           onChange={textAreaSelect}
         ></textarea>
       </form>
-    
-      <Button text="Отправить" form="Question-Form" className='Button QuestionButton' />
+
+      <Button
+        text="Отправить"
+        form="Question-Form"
+        className="Button QuestionButton"
+      />
     </div>
   );
 };

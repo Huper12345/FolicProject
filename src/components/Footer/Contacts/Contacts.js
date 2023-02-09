@@ -1,6 +1,6 @@
-import React from 'react';
-import './Contacts.css';
-import { TextButton } from '../../../helpers/TextButton';
+import React from "react";
+import "./Contacts.css";
+import { TextButton } from "../../../helpers/TextButton";
 
 export const Contacts = () => {
   return (

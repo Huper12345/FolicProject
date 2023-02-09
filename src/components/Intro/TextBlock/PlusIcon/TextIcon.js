@@ -1,11 +1,9 @@
-import React from 'react';
-import './TextIcon.css';
+import React from "react";
+import "./TextIcon.css";
 
-export const TextIcon = ({classIcon}) => {
-  
-
+export const TextIcon = ({ classIcon }) => {
   return (
-    <svg 
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       className={classIcon}
       viewBox="0 0 21000 29700"

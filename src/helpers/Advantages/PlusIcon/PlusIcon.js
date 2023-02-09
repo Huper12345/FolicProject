@@ -1,11 +1,9 @@
-import React from 'react';
-import './PlusIcon.css';
+import React from "react";
+import "./PlusIcon.css";
 
-export const PlusIcon = ({classIcon}) => {
-  
-
+export const PlusIcon = ({ classIcon }) => {
   return (
-    <svg 
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       className={classIcon}
       viewBox="0 0 512 512"

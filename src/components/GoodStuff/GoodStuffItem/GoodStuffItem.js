@@ -50,8 +50,7 @@ export const GoodStuffItem = ({
             height="593px"
             alt="Good"
             className="GoodStuff-Img"
-          >
-          </img>
+          ></img>
         </div>
 
         <div className="GoodStuff-Box">

@@ -1,7 +1,7 @@
-import React from 'react';
-import './FooterNav.css';
+import React from "react";
+import "./FooterNav.css";
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const FooterNav = () => {
   return (

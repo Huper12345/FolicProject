@@ -23,7 +23,7 @@
   font-weight: 400;
   font-style: normal;
   src: url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff)
-       url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
+    url(/src/helpers/assets/fonts/PlayfairDisplay-Regular.woff2);
   font-display: swap;
 }
 

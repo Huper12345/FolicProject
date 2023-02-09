@@ -1,8 +1,8 @@
-import React from 'react';
-import './Medication.css';
-import { Title } from '../../helpers/Title';
-import { Product } from './Product';
-import { Subscription } from '../../helpers/Subcsription';
+import React from "react";
+import "./Medication.css";
+import { Title } from "../../helpers/Title";
+import { Product } from "./Product";
+import { Subscription } from "../../helpers/Subcsription";
 
 export const Medication = () => {
   return (
