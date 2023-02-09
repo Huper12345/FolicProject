@@ -75,9 +75,10 @@
   border-radius: 5px;
   transition: 0.2s;
   cursor: pointer;
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
-::-webkit-calendar-picker-indicator {
+.BabyInput::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
   background: url(https://i.ibb.co/Fxp3nFF/calendar.png) no-repeat center;
@@ -126,12 +127,13 @@
 }
 
 @media (min-width: 989px) {
-  .BabyInput.WomanAge:hover {
+  .BabyInput:hover {
     background-color: var(--darkpink);
   }
 
   .BabyInput.Result:hover {
-    cursor: inherit;
+    background-color: var(--white);
+    cursor: default;
   }
 }
 
