@@ -1,6 +1,7 @@
 import React from "react";
 import "./SeText.css";
 import Baby from "../../../helpers/assets/Images/BabyCalculator-pack/babyGirl.webp";
+import CheckList from "../../../helpers/assets/Files/Чек-лист для будущей мамы.pdf"
 
 export const SeText = () => {
   return (
@@ -25,6 +26,9 @@ export const SeText = () => {
           календаре. Стоит отметить что лунный возраст отличается от нашего
           возраста, но мы это учли.
         </p>
+        <div className="CheckList-Inner">
+          <a href={CheckList} target="blank" className="CheckList-button">Чек-лист для будущей мамы</a>
+        </div>
       </div>
     </div>
   );
