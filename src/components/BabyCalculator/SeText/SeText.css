@@ -23,35 +23,60 @@
 
 .CheckList-Inner {
  margin: 30px 0;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.CheckList-title {
+  margin-bottom: 15px;
+  font-family: "Play-Fair-Display-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.CheckList-subtitle {
+  color: var(--darkpink);
 }
 
 .CheckList-button {
-  max-width: 150px;
+  max-width: 120px;
   height: 45px;
-  background-color: var(--darkpink);
+  background-color: var(--marineblue);
   border-radius: 25px;
   cursor: pointer;
   transition: 0.1s;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Play-Fair-Display-Regular";
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
   color: var(--white);
   text-transform: uppercase;
-  padding: 13px 15px 13px 15px;
+  padding: 11px 13px 11px 13px;
+  transition: 0.2s;
 }
 
 
 @media (min-width: 989px) {
   .CheckList-button:hover {
-    background-color: brown;
+    background-color: var(--darkpink);
   }
 }
 
 @media (max-width: 522px) {
   .CheckList-button {
     margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .CheckList-title  {
+    font-size: 18px;
+    text-align: center;
   }
 
 }

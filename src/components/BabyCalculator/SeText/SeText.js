@@ -1,7 +1,8 @@
 import React from "react";
 import "./SeText.css";
 import Baby from "../../../helpers/assets/Images/BabyCalculator-pack/babyGirl.webp";
-import CheckList from "../../../helpers/assets/Files/Чек-лист для будущей мамы.pdf"
+import CheckList from "../../../helpers/assets/Files/Чек-лист для будущей мамы.pdf";
+import { Title } from "../../../helpers/Title/Title";
 
 export const SeText = () => {
   return (
@@ -27,7 +28,8 @@ export const SeText = () => {
           возраста, но мы это учли.
         </p>
         <div className="CheckList-Inner">
-          <a href={CheckList} target="blank" className="CheckList-button">Чек-лист для будущей мамы</a>
+          {<h4 className="CheckList-title">Чек-лист будущей <span className="CheckList-subtitle">мамы</span></h4>}
+          <a href={CheckList} target="blank" className="CheckList-button">Открыть</a>
         </div>
       </div>
     </div>
